@@ -1,0 +1,47 @@
+import { NavLink } from "react-router-dom";
+
+function Nav() {
+  const handleClickScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <nav className="nav-wrp">
+      <div className="logo-wrp">
+        <NavLink onClick={() => handleClickScroll("/")} to={"/"}>
+          <h2>Bringing Link Ups</h2>
+        </NavLink>
+      </div>
+      <div className="link-wrp">
+        <NavLink
+          onClick={() => handleClickScroll("our-mission")}
+          to={"our-mission"}
+        >
+          Our Mission
+        </NavLink>
+        <NavLink onClick={() => handleClickScroll("dilemma")} to={"dilemma"}>
+          {" "}
+          The Dilemma{" "}
+        </NavLink>
+        <NavLink
+          //   className={({ isActive, isPending }) => {}}
+          onClick={() => handleClickScroll("solution")}
+          to={"solution"}
+        >
+          {" "}
+          Our Solution{" "}
+        </NavLink>
+        <NavLink onClick={() => handleClickScroll("contact")} to={"contact"}>
+          {" "}
+          Contact Us{" "}
+        </NavLink>
+      </div>
+    </nav>
+  );
+}
+
+export default Nav;
