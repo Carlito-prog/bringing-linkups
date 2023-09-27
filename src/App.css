@@ -21,18 +21,3 @@ a {
   text-decoration: none;
   color: whitesmoke;
 }
-section{
-height: 600px !important;
-}
-#our-mission{
-background-color: red;
-}
-#contact{
-  background-color: green;
-}
-#dilemma{
-  background-color: blue;
-}
-#solution{
-  background-color: orange;
-}
