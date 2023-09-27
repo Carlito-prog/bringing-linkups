@@ -1,33 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.scss'
+import { ImageComponent } from './components/ImageComponent'
+import { TextComponent } from './components/TextComponent'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main id="wrapper">
+        <section id="about">
+          <div className='content'>
+            <TextComponent title={"Our Mission"} text={"Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui."}/>
+            <ImageComponent url={"https://placeholder.com/300x300"} alt={"text"} />
+          </div>
+        </section>
+        <section id="about">
+          <div className='content'>
+            <ImageComponent url={"https://placeholder.com/300x300"} alt={"text"} />
+            <TextComponent title={"The Dilemma"} text={"Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui."}/>
+          </div>
+        </section>
+        <section id="our-mission">
+          <div className='content'>
+            <TextComponent title={"Our Solution"} text={"Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui."}/>
+            <ImageComponent url={"https://placeholder.com/300x300"} alt={"text"} />
+          </div>
+        </section>
+        <section id="contact">
+          <div className='content'>
+            <ImageComponent url={"https://placeholder.com/300x300"} alt={"text"} />
+            <TextComponent title={"Contact Us"} text={"Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui."}/>
+          </div>
+        </section>
+      </main>
+      <footer>This is a footer</footer>
     </>
   )
 }
