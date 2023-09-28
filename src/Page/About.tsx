@@ -2,12 +2,12 @@ import React from "react";
 import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
-function OurMission() {
+function About() {
   return (
-    <section id="our-mission" className="darkBG">
+    <section id="founders">
       <div className="content">
         <TextComponent
-          title={"Our Mission"}
+          title={"Our Founder"}
           text={
             "Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui."
           }
@@ -18,4 +18,4 @@ function OurMission() {
   );
 }
 
-export default OurMission;
+export default About;

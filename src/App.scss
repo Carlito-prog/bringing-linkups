@@ -1,43 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Lato:wght@300;400;700;900&display=swap');
-@import './variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display&family=Lato:wght@300;400;700;900&display=swap");
+@import "./variables.scss";
 
 html,
-body{
-margin: 0;
-padding: 0;
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-#root{
+#root {
   font-family: $primary-font;
 }
 
-#wrapper section{
-  height: 52.8125rem;
-  &:nth-child(odd){
-    background: $dark-bg;
-    color: white;
-  }
+.nav-wrp {
+  background-color: indigo;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navInner {
+  display: flex;
+  padding: 0 7px;
+}
+.logo-wrp {
+  flex: 0.5;
+}
+.link-wrp {
+  flex: 0.5;
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-.content{
+#wrapper section {
+  height: 50rem;
+  margin-top: 68px;
+}
+.darkBG {
+  background: $dark-bg;
+  color: white;
+}
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 75rem;
   height: 100%;
   margin: auto;
-  .info, .image{
+  .info,
+  .image {
     width: 50%;
     margin: 0 50px;
-    p{
-      font-size: $main-text
+    p {
+      font-size: $main-text;
     }
   }
 
-h3{
-    color: #7C73D9;
+  h3 {
+    color: #7c73d9;
     font-size: $main-title;
     line-height: 1.875rem;
   }
-  
 }

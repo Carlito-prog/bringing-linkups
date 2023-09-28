@@ -1,12 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 
 function OurSolution() {
   return (
-    <div>
-      OurSolution
-      <Outlet />
-    </div>
+    <section id="solution" className="darkBG">
+      <div className="content"></div>
+    </section>
   );
 }
 
