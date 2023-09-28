@@ -1,3 +1,5 @@
+import React from "react"
+
 type textComponentType = {
   title: string,
   text: string

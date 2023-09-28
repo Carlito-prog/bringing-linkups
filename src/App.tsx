@@ -1,6 +1,8 @@
+import React from "react";
 import "./App.scss";
 import { ImageComponent } from "./components/ImageComponent";
 import { TextComponent } from "./components/TextComponent";
+
 function App() {
   return (
     <>
