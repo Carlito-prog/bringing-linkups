@@ -1,13 +1,17 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { TextComponent } from "../components/TextComponent";
+import { ImageComponent } from "../components/ImageComponent";
 
-function OurMIssion() {
+function OurMission() {
   return (
     <div>
-      OurMIssion
-      <Outlet />
+      <TextComponent
+        text="Connect people together based on proximity to events and gatherings"
+        title="Bringing Link Ups"
+      />
+      <ImageComponent alt="" url="" />
     </div>
   );
 }
 
-export default OurMIssion;
+export default OurMission;
