@@ -1,3 +1,5 @@
+import React from "react"
+
 type ImageComponentType = {
   alt: string,
   url: string
