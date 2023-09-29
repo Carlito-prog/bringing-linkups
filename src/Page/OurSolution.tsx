@@ -1,9 +1,7 @@
-import React from "react";
-
 function OurSolution() {
   return (
     <section id="solution" className="darkBG">
-      <div className="content"></div>
+      <div className="two-col"></div>
     </section>
   );
 }

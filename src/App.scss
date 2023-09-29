@@ -37,6 +37,14 @@ a {
   text-decoration: none;
   color: whitesmoke;
 }
+.two-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  height: 100%;
+  margin: auto;
+}
 
 #wrapper section {
   height: 50rem;
@@ -46,13 +54,7 @@ a {
   background: $dark-bg;
   color: white;
 }
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 75rem;
-  height: 100%;
-  margin: auto;
+.two-col {
   .info,
   .image {
     width: 50%;
@@ -67,4 +69,45 @@ a {
     font-size: $main-title;
     line-height: 1.875rem;
   }
+}
+.svgcol-wrp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.svgcol-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+}
+.img-wrp {
+  max-width: 300px;
+  object-fit: cover;
+  aspect-ratio: 4.5/6;
+}
+.img-wrp img {
+  width: 100%;
+  height: 100%;
+}
+.svgcol-wrp h2 {
+  text-align: center;
+  color: #7c73d9;
+  font-size: $main-title;
+  line-height: 1.875rem;
+  margin-top: 4rem;
+}
+.svgcol-cont {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  gap: 12px;
+}
+
+.svgcol-cont p {
+  text-wrap: wrap;
+  padding: 0 18px;
 }

@@ -5,7 +5,7 @@ import OurMission from "./Page/OurMission";
 import ContactUs from "./Page/ContactUs";
 import OurSolution from "./Page/OurSolution";
 import TheDilemma from "./Page/TheDilemma";
-import About from "./Page/About";
+import About from "./Page/Founders";
 
 function App() {
   return (
