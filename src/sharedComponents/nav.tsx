@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
@@ -20,7 +21,7 @@ function Nav() {
       <div className="navInner">
         <div className="logo-wrp">
           <NavLink onClick={() => handleClickScrollTop()} to={"/"}>
-            <h2>Bringing Link Ups</h2>
+            <img src="src/assets/blu-logo-white.png" alt="Bringing Link Ups" width="125px"/>
           </NavLink>
         </div>
         <div className="link-wrp">

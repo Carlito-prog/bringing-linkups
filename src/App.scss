@@ -20,7 +20,7 @@ body {
 }
 .navInner {
   display: flex;
-  padding: 0 7px;
+  padding: 5px 1%;
 }
 .logo-wrp {
   flex: 0.5;
@@ -30,7 +30,7 @@ body {
   display: flex;
   align-self: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: nowrap;
 }
 a {
