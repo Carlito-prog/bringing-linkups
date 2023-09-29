@@ -3,7 +3,7 @@ import data from "../../src/data/dilemma.json";
 
 function TheDilemma() {
   return (
-    <section id="dilemma">
+    <section id="dilemma" className="col-section">
       <SVGColumns componentTitle="The Dilemma" columnData={data} />
     </section>
   );

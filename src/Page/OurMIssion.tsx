@@ -4,7 +4,7 @@ import { ImageComponent } from "../components/ImageComponent";
 function OurMission() {
   return (
     <section id="our-mission" className="darkBG">
-      <div className="two-col">
+      <div className="col-section two-col">
         <TextComponent
           title={"Our Mission"}
           text={
