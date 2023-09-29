@@ -13,20 +13,16 @@ export const SVGColumns: React.FC<SVGColumnsProps> = ({
   columnData,
 }) => {
   return (
-    <div className="svgcol-wrp">
+    <div className="three-col-wrapper">
       <h2>{componentTitle}</h2>
-      <div className="svgcol-cont">
+      <div className="three-col-inner">
         {columnData.map((data) => (
-          <div className="svgcol-inner">
-            <div className="img-wrp">
+          <div className="col">
               <img
                 src={data.svgUrl}
                 alt={data.labelText}
-                // height={"auto"}
-                // width={"150rem"}
               />
-            </div>
-            <h4>{data.labelText}</h4>
+            <h3>{data.labelText}</h3>
             <p>{data.descriptionText}</p>
           </div>
         ))}

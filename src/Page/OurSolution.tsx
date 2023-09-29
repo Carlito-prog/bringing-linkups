@@ -1,7 +1,7 @@
 function OurSolution() {
   return (
     <section id="solution" className="darkBG">
-      <div className="two-col"></div>
+      <div className="col-section two-col">Our Solution</div>
     </section>
   );
 }

@@ -21,7 +21,7 @@ function Nav() {
       <div className="navInner">
         <div className="logo-wrp">
           <NavLink onClick={() => handleClickScrollTop()} to={"/"}>
-            <img src="src/assets/blu-logo-white.png" alt="Bringing Link Ups" width="125px"/>
+            <img src="src/assets/images/blu-logo-white.png" alt="Bringing Link Ups" width="125px"/>
           </NavLink>
         </div>
         <div className="link-wrp">
