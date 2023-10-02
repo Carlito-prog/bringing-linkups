@@ -46,6 +46,7 @@ p{
     color: whitesmoke;
   }
 }
+
 #wrapper section {
   height: 50rem;
   margin-top: 68px;
@@ -56,6 +57,7 @@ p{
   height: 100%;
   margin: auto;
 }
+
 .two-col {
   display: flex;
   justify-content: center;
@@ -74,6 +76,7 @@ p{
     line-height: 1.875rem;
   }
 }
+
 .three-col-wrapper {
   display: flex;
   flex-direction: column;
@@ -134,3 +137,15 @@ p{
 //   text-wrap: wrap;
 //   padding: 0 18px;
 // }
+
+
+/* Our Mission */
+#our-mission{
+  text-align: center;
+  p{
+  font-family: $secondary-font;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3rem;
+  }
+}
