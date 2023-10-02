@@ -11,7 +11,7 @@ function OurMission() {
             "We are a social networking platform that unites individuals based on proximity to events!"
           }
         />
-        <ImageComponent url={"https://placeholder.com/300x300"} alt={"text"} />
+        <ImageComponent url={"src/assets/images/blu-logo.png"} alt={"text"} />
       </div>
     </section>
   );

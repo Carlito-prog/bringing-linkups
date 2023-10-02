@@ -46,6 +46,10 @@ p{
     color: whitesmoke;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b76c98f (added new font to mission statement section and placed colored logo also started work on contact us)
 #wrapper section {
   height: 50rem;
   margin-top: 68px;
@@ -133,4 +137,20 @@ p{
 // .svgcol-cont p {
 //   text-wrap: wrap;
 //   padding: 0 18px;
+<<<<<<< HEAD
 // }
+=======
+// }
+
+
+/* Our Mission */
+#our-mission{
+  text-align: center;
+  p{
+  font-family: $secondary-font;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 3rem;
+  }
+}
+>>>>>>> b76c98f (added new font to mission statement section and placed colored logo also started work on contact us)
