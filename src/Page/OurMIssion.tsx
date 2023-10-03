@@ -8,7 +8,7 @@ function OurMission() {
         <TextComponent
           title={"Our Mission"}
           text={
-            "We are a social networking platform that unites individuals based on proximity to events!"
+            "Bringing People Together Based On Proximity & Interest To Events They Love!"
           }
         />
         <ImageComponent url={"src/assets/images/blu-logo.png"} alt={"text"} />
