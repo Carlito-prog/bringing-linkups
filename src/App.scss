@@ -27,6 +27,9 @@ p {
   width: 100%;
   top: 0;
 }
+.nav-wrp.hidden {
+  top: -100px;
+}
 .navInner {
   display: flex;
   padding: 5px 1%;
