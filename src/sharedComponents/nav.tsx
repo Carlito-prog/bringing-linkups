@@ -58,15 +58,13 @@ function Nav() {
             Our Mission
           </NavLink>
           <NavLink onClick={() => handleClickScroll("dilemma")} to={"dilemma"}>
-            {" "}
-            The Dilemma{" "}
+            The Dilemma{""}
           </NavLink>
           <NavLink
             onClick={() => handleClickScroll("solution")}
             to={"solution"}
           >
-            {" "}
-            Our Solution{" "}
+            Our Solution{""}
           </NavLink>
           <NavLink
             onClick={() => handleClickScroll("founders")}
@@ -75,8 +73,7 @@ function Nav() {
             Founders
           </NavLink>
           <NavLink onClick={() => handleClickScroll("contact")} to={"contact"}>
-            {" "}
-            Contact Us{" "}
+            Contact Us{""}
           </NavLink>
         </div>
       </div>

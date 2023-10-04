@@ -1,13 +1,15 @@
 import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
-function OurMission() {
+export const OurMission = () => {
+
   const handleClick = () => {
     const element = document.getElementById("contact");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }
+    
   return (
     <section id="our-mission" className="darkBG">
       <div className="col-section two-col">
@@ -24,7 +26,5 @@ function OurMission() {
         </div>
       </div>
     </section>
-  );
+  )
 }
-
-export default OurMission;

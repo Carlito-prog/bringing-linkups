@@ -1,7 +1,7 @@
 import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
-function About() {
+export const Founders = () => {
   return (
     <section id="founders">
       <div className="col-section two-col">
@@ -16,5 +16,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

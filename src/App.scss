@@ -12,10 +12,14 @@ body {
   font-family: $primary-font;
 }
 /* Global Styles */
+.error{
+  color: red;
+}
 
-p {
+p{
   line-height: 1.75rem;
 }
+
 .darkBG {
   background: $dark-bg;
   color: white;
@@ -25,6 +29,7 @@ p {
   background-color: indigo;
   position: fixed;
   width: 100%;
+  height: 80px;
   top: 0;
 }
 .nav-wrp.hidden {
@@ -85,7 +90,7 @@ p {
     }
   }
   h3 {
-    color: #7c73d9;
+    color: $main-title-color;
     font-size: $main-title-size;
     line-height: 1.875rem;
   }
@@ -132,29 +137,41 @@ p {
     font-weight: 700;
     line-height: 3rem;
   }
-  .contactEarly {
-    position: absolute;
-    top: 75%;
-    h5 {
-      color: #f4ba65;
-      font-size: $main-title-size;
-      font-size: 1.75rem;
-      font-weight: 300;
-      line-height: 3rem;
-      margin: 3px;
-      padding: 10px;
-    }
-    button {
-      min-height: 20px;
-      background-color: #7c73d9;
-      color: whitesmoke;
-      font-size: 1rem;
-      min-width: 120px;
-      border-radius: 10px;
-      border-width: 1px;
-      border-color: #f4ba65;
-      padding: 10px 0;
-    }
+}
+
+#contact-form{
+  div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  label{
+    margin-bottom: 5px;
+  }
+}
+
+.contactEarly {
+  position: absolute;
+  top: 75%;
+  h5 {
+    color: #f4ba65;
+    font-size: $main-title-size;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin: 3px;
+    padding: 10px;
+  }
+  button {
+    min-height: 20px;
+    background-color: $main-title-color;
+    color: whitesmoke;
+    font-size: 1rem;
+    min-width: 120px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #f4ba65;
+    padding: 10px 0;
   }
 }
 
@@ -172,5 +189,90 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
+  }
+}
+
+#contact {
+  .two-col{
+    > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      height: 100%;
+      margin: 0 50px;
+    }
+  }
+  h3,h4{
+    margin: 20px 0;
+  }
+  h3 {
+    color: $main-title-color;
+    font-size: $main-title-size;
+    line-height: 1.875rem;
+  }
+  h4{
+    color: $main-title-color;
+    font-size: $secondary-title-size;
+  }
+
+  .social-inner{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .contact-inner{
+    input,
+    textarea{
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+      padding-left: 5px;
+    }
+    :focus{
+      outline: none;
+    }
+    input{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 0.25px;
+      border-bottom-style: solid;
+      border-bottom-color: white;
+      height: 30px;
+    }
+    textarea{
+      border: .5px solid white;
+      resize: none;
+      margin-top: 20px;
+    }
+    ::placeholder{
+      color: white;
+      font-family: $primary-font;
+    }
+    span{
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    button{
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      letter-spacing: .15rem;
+      margin-top: 20px;
+      text-transform: uppercase;
+      width: 30%;
+      height: 40px;
+      &:hover{
+        background: $main-title-color;
+        border: 1px solid $main-title-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  label{
+    margin-bottom: 5px;
   }
 }

@@ -1,7 +1,7 @@
 import ThreeColumns from "../components/threeColumns";
 import solutions from "../../src/data/solutions.json";
 
-function OurSolution() {
+export const OurSolution = () => {
   return (
     <section id="solution">
       <div className="vidContainer darkBG">
@@ -16,5 +16,3 @@ function OurSolution() {
     </section>
   );
 }
-
-export default OurSolution;
