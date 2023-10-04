@@ -2,6 +2,7 @@ import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
 export const OurMission = () => {
+
   const handleClick = () => {
     const element = document.getElementById("contact");
     if (element) {
@@ -25,5 +26,5 @@ export const OurMission = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
