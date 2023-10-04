@@ -1,7 +1,29 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
+  const [show, setShow] = useState(true);
+  const [previousScrollPos, setPreviousScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      // Determine scroll direction
+      const visible =
+        previousScrollPos > currentScrollPos || currentScrollPos < 10;
+
+      // Update state
+      setShow(visible);
+      setPreviousScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [previousScrollPos]);
+
   const handleClickScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,11 +39,15 @@ function Nav() {
   };
 
   return (
-    <nav className="nav-wrp" id="wrapper">
+    <nav className={`nav-wrp ${show ? "" : "hidden"}`} id="wrapper">
       <div className="navInner">
         <div className="logo-wrp">
           <NavLink onClick={() => handleClickScrollTop()} to={"/"}>
-            <img src="src/assets/images/blu-logo-white.png" alt="Bringing Link Ups" width="125px"/>
+            <img
+              src="src/assets/images/blu-logo-white.png"
+              alt="Bringing Link Ups"
+              width="125px"
+            />
           </NavLink>
         </div>
         <div className="link-wrp">

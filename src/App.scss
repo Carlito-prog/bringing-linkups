@@ -31,6 +31,9 @@ p{
   width: 100%;
   top: 0;
 }
+.nav-wrp.hidden {
+  top: -100px;
+}
 .navInner {
   display: flex;
   padding: 5px 1%;
@@ -45,7 +48,7 @@ p{
   justify-content: flex-end;
   gap: 15px;
   flex-wrap: nowrap;
-  a{
+  a {
     text-decoration: none;
     color: whitesmoke;
   }
@@ -56,7 +59,7 @@ p{
   margin-top: 68px;
 }
 
-.col-section{
+.col-section {
   max-width: 75rem;
   height: 100%;
   margin: auto;
@@ -66,11 +69,12 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   .info,
   .image {
     width: 50%;
     margin: 0 50px;
-    p{
+    p {
       font-size: $main-text-size;
     }
   }
@@ -84,9 +88,9 @@ p{
 .three-col-wrapper {
   display: flex;
   flex-direction: column;
-  h2{
+  h2 {
     text-align: center;
-    color:$main-title-color;
+    color: $main-title-color;
     font-size: $main-title-size;
   }
 }
@@ -94,63 +98,33 @@ p{
 .three-col-inner {
   display: flex;
   gap: 25px;
-  .col{
+  .col {
     max-width: 33.3%;
     width: 100%;
   }
-  img{
+  img {
     width: 100%;
     height: 350px;
     overflow: hidden;
     object-fit: cover;
   }
-  h3{
+  h3 {
     color: $main-title-color;
     text-align: center;
   }
-  p{
+  p {
     text-align: justify;
   }
 }
 
-// .img-wrp {
-//   width: 350px;
-//   height: 350px;
-//   overflow: hidden;
-//   object-fit: cover;
-// }
-// .img-wrp img {
-//   width: 100%;
-//   height: 100%;
-// }
-// .svgcol-wrp h2 {
-//   text-align: center;
-//   color: #7c73d9;
-//   font-size: $main-title-size;
-//   line-height: 1.875rem;
-//   margin-top: 4rem;
-// }
-// .svgcol-cont {
-//   display: flex;
-//   justify-content: space-around;
-//   height: 100%;
-//   gap: 12px;
-// }
-
-// .svgcol-cont p {
-//   text-wrap: wrap;
-//   padding: 0 18px;
-// }
-
-
 /* Our Mission */
-#our-mission{
+#our-mission {
   text-align: center;
-  p{
-  font-family: $secondary-font;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 3rem;
+  p {
+    font-family: $secondary-font;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 3rem;
   }
 }
 
@@ -162,5 +136,48 @@ p{
   }
   label{
     margin-bottom: 5px;
+  }
+}
+
+  .contactEarly {
+    position: absolute;
+    top: 75%;
+    h5 {
+      color: #f4ba65;
+      font-size: $main-title-size;
+      font-size: 1.75rem;
+      font-weight: 300;
+      line-height: 3rem;
+      margin: 3px;
+      padding: 10px;
+    }
+    button {
+      min-height: 20px;
+      background-color: #7c73d9;
+      color: whitesmoke;
+      font-size: 1rem;
+      min-width: 120px;
+      border-radius: 10px;
+      border-width: 1px;
+      border-color: #f4ba65;
+      padding: 10px 0;
+    }
+  }
+}
+
+#wrapper section {
+  .sectionTitle {
+    color: #7c73d9;
+    font-size: $main-title-size;
+    line-height: 1.875rem;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 0;
+  }
+  .col-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 }
