@@ -1,9 +1,9 @@
 import { Formik } from 'formik'
 import { ContactFormSchema } from './contactformvalidation';
+import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin, TiSocialTwitter } from 'react-icons/ti'
 
 export type formTypes = {
-  firstName: string,
-  lastName: string,
+  fullName: string,
   email: string,
   phone: string,
   reason: string,
@@ -11,24 +11,47 @@ export type formTypes = {
 
 export const ContactUs = () => {
   const initialValues: formTypes = {
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
     phone: "",
     reason: "",
   }
   return (
     <section id="contact" className="darkBG">
-      <div className="col-section">
-        <div>
+      <div className="col-section two-col">
+        <div className='contact-info'>
           <h3>Contact Us</h3>
+          <p>
+            123 Somewhere Drive<br />
+            ACity, State 12345
+          </p>
+
+          <div className='social'>
+            <h4>Follow us</h4>
+            <div className='social-inner'>
+              <TiSocialFacebook size={30}/>
+              <TiSocialInstagram size={30}/>
+              <TiSocialLinkedin size={30}/>
+              <TiSocialTwitter size={30}/>
+            </div>
+          </div>
+        </div>
+        <div className='contact-inner'>
           <Formik
             initialValues={initialValues}
             validationSchema = {
               ContactFormSchema
             }
-            onSubmit={(values) => {
+            onSubmit={(values, {resetForm}) => {
               console.log(values)
+              resetForm({
+                values: {
+                  fullName: "",
+                  email: "",
+                  phone: "",
+                  reason: "",
+                },
+              })
             }}
           >
             {({
@@ -39,72 +62,59 @@ export const ContactUs = () => {
         handleBlur,
         handleSubmit,
         isSubmitting,
-        dirty
         /* and other goodies */
         }) => (
           <form id="contact-form" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="firstName">First Name</label>
               <input 
-                id="firstName"
-                name="firstName"
+                id="fullName"
+                name="fullName"
+                placeholder='Full Name'
                 type="text"
                 onChange={handleChange}
                 onBlur={handleBlur}
-                value={values.firstName}
+                value={values.fullName}
               />
-              {errors.firstName && touched.firstName ? <p className="error">{errors.firstName}</p> : null}
+              {errors.fullName && touched.fullName ? <span className="error">{errors.fullName}</span> : null}
             </div>
             <div>
-              <label htmlFor="lastName">Last Name</label>
-              <input 
-                id="lastName"
-                name="lastName"
-                type="text"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.lastName}
-                />
-              {errors.lastName && touched.lastName ? <p className="error">{errors.lastName}</p> : null}
-            </div>
-            <div>
-              <label htmlFor="email">Email Address</label>
               <input
                 id="email"
                 name="email"
+                placeholder='example@mail.com'
                 type="email"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
               />
-              {errors.email && touched.email ? <p className="error">{errors.email}</p> : null}
+              {errors.email && touched.email ? <span className="error">{errors.email}</span> : null}
             </div>
             <div>
-              <label htmlFor="phone">Phone Number</label>
               <input
                 id="phone"
                 name="phone"
+                placeholder='Phone number'
                 type="number"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.phone}
               />
-              {errors.phone && touched.phone ? <p className="error">{errors.phone}</p> : null}
+              {errors.phone && touched.phone ? <span className="error">{errors.phone}</span> : null}
             </div>
             <div>
-              <label htmlFor="reason">Reason for inquiry</label>
               <textarea
                 cols={40}
                 rows={8}
                 id="reason"
                 name="reason"
+                placeholder='Reason for inquiry...'
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.reason}
               />
-              {errors.reason && touched.reason ? <p className="error">{errors.reason}</p> : null}
+              {errors.reason && touched.reason ? <span className="error">{errors.reason}</span> : null}
             </div>
-            <button type="submit" disabled={isSubmitting&&dirty}>Submit</button>
+            <button type="submit" disabled={isSubmitting}>Submit</button>
           </form>
           )}
           </Formik>
