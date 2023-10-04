@@ -1,14 +1,17 @@
+import React from "react";
+
 type columnProps = {
-  svgUrl: string;
+  url: string;
   labelText: string;
   descriptionText: string;
-};
-type SVGColumnsProps = {
+}
+
+type ThreeColumnsProps = {
   componentTitle: string;
   columnData: columnProps[];
-};
+}
 
-export const SVGColumns: React.FC<SVGColumnsProps> = ({
+export const ThreeColumns:React.FC<ThreeColumnsProps> = ({
   componentTitle,
   columnData,
 }) => {
@@ -17,9 +20,9 @@ export const SVGColumns: React.FC<SVGColumnsProps> = ({
       <h2>{componentTitle}</h2>
       <div className="three-col-inner">
         {columnData.map((data) => (
-          <div className="col">
+          <div key={Math.random()} className="col">
               <img
-                src={data.svgUrl}
+                src={data.url}
                 alt={data.labelText}
               />
             <h3>{data.labelText}</h3>
@@ -28,7 +31,5 @@ export const SVGColumns: React.FC<SVGColumnsProps> = ({
         ))}
       </div>
     </div>
-  );
-};
-
-export default SVGColumns;
+  )
+}

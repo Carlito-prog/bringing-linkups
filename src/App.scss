@@ -13,6 +13,10 @@ body {
 }
 /* Global Styles */
 
+.error{
+  color: red;
+}
+
 p{
   line-height: 1.75rem;
 }
@@ -147,5 +151,16 @@ p{
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 3rem;
+  }
+}
+
+#contact-form{
+  div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  label{
+    margin-bottom: 5px;
   }
 }

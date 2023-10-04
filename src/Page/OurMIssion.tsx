@@ -1,7 +1,7 @@
 import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
-function OurMission() {
+export const OurMission = () => {
   return (
     <section id="our-mission" className="darkBG">
       <div className="col-section two-col">
@@ -16,5 +16,3 @@ function OurMission() {
     </section>
   );
 }
-
-export default OurMission;
