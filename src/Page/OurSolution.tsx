@@ -1,4 +1,4 @@
-function OurSolution() {
+export const OurSolution = () => {
   return (
     <section id="solution" className="darkBG">
       <h3 className="sectionTitle">Our Solution</h3>
@@ -17,5 +17,3 @@ function OurSolution() {
     </section>
   );
 }
-
-export default OurSolution;

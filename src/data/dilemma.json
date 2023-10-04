@@ -1,16 +1,16 @@
 [
     {
-        "svgUrl": "src/assets/images/together.jpg",
+        "url": "src/assets/images/together.jpg",
         "labelText": "The Want To Connect With Friends Beyond The Internet",
         "descriptionText": "Studies shows 60% of people wish they saw their friends more while 70% felt excluded from social media,it is hard to find events & to find gatherings with one source where you can interact with friends while scheduling & confirming a link up."
     },
     {
-        "svgUrl": "src/assets/images/instaSharing.png",
+        "url": "src/assets/images/instaSharing.png",
         "labelText": "The Way We Use Tech for Events/Gatherings",
         "descriptionText": "We all either have events through out the year or partake in events through out the year, and the inconvenience it is to invite, confirm, and interact when it comes to having an event or gathering is absolutely ridiculous. Not to mention the amount of research it takes to find something going, makes the experience unbearable at times."
     },
     {
-        "svgUrl": "src/assets/images/busylife.jpg",
+        "url": "src/assets/images/busylife.jpg",
         "labelText": "We Have Busy Lives",
         "descriptionText": "We all have responsibilities and at times we forget to make time for the things we love with the people we love. We run around so much during the week that we either forget to schedule our hobbies in, miss the time of which we wanted go, or get others to confirm to go with you or not so you know what to do. "
     }
