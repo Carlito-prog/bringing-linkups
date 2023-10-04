@@ -6,7 +6,7 @@ import {
   TiSocialLinkedin,
   TiSocialTwitter,
 } from "react-icons/ti";
-import { sendData } from "../utils/firebase/firebase";
+// import { sendData } from "../utils/firebase/firebase";
 
 export type formTypes = {
   fullName: string;
@@ -48,16 +48,25 @@ export const ContactUs = () => {
             initialValues={initialValues}
             validationSchema={ContactFormSchema}
             onSubmit={async (values, { resetForm }) => {
-              await sendData(values).then(() => {
-                resetForm({
-                  values: {
-                    fullName: "",
-                    email: "",
-                    phone: "",
-                    reason: "",
-                  },
-                });
+              console.log(values);
+              resetForm({
+                values: {
+                  fullName: "",
+                  email: "",
+                  phone: "",
+                  reason: "",
+                },
               });
+              // await sendData(values).then(() => {
+              //   resetForm({
+              //     values: {
+              //       fullName: "",
+              //       email: "",
+              //       phone: "",
+              //       reason: "",
+              //     },
+              //   });
+              // });
             }}
           >
             {({

@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "navigation"],
+  "include": ["src", "navigation", "api/mailchimpfunc.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

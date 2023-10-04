@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Nav from "./sharedComponents/nav";
-import { OurMission } from "./Page/OurMission";
 import { ContactUs } from "./Page/ContactUs";
 import { OurSolution } from "./Page/OurSolution";
 import { TheDilemma } from "./Page/TheDilemma";
 import { Founders } from "./Page/Founders";
+import { OurMission } from "./Page/OurMIssion";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 // /api/send-email.ts (if using Vercel)
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
-import { formTypes } from "../../../Page/ContactUs";
+import { formTypes } from "../src/Page/ContactUs";
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method !== "POST") {
