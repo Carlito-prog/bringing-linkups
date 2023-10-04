@@ -1,6 +1,7 @@
 import { TextComponent } from "../components/TextComponent";
 import { ImageComponent } from "../components/ImageComponent";
 
+<<<<<<< HEAD
 export const OurMission = () => {
   const handleClick = () => {
     const element = document.getElementById("contact");
@@ -9,6 +10,16 @@ export const OurMission = () => {
     }
   }
     
+=======
+const handleClick = () => {
+  const element = document.getElementById("contact");
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+export const OurMission = () => {
+>>>>>>> eacddc1 (added formik and yup to create contact form)
   return (
     <section id="our-mission" className="darkBG">
       <div className="col-section two-col">
