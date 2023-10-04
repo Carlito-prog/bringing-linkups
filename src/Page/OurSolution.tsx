@@ -1,5 +1,5 @@
-import ThreeColumns from "../components/threeColumns";
 import solutions from "../../src/data/solutions.json";
+import { ThreeColumns } from "../components/threeColumns";
 
 export const OurSolution = () => {
   return (
@@ -15,4 +15,4 @@ export const OurSolution = () => {
       </div>
     </section>
   );
-}
+};
