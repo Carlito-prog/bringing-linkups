@@ -6,6 +6,7 @@ import {
   TiSocialLinkedin,
   TiSocialTwitter,
 } from "react-icons/ti";
+import { sendData } from "../utils/firebase/firebase";
 
 export type formTypes = {
   fullName: string;
@@ -46,15 +47,16 @@ export const ContactUs = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={ContactFormSchema}
-            onSubmit={(values, { resetForm }) => {
-              console.log(values);
-              resetForm({
-                values: {
-                  fullName: "",
-                  email: "",
-                  phone: "",
-                  reason: "",
-                },
+            onSubmit={async (values, { resetForm }) => {
+              await sendData(values).then(() => {
+                resetForm({
+                  values: {
+                    fullName: "",
+                    email: "",
+                    phone: "",
+                    reason: "",
+                  },
+                });
               });
             }}
           >
