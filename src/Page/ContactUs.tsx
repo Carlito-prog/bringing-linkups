@@ -1,5 +1,3 @@
-import React from "react";
-
 function ContactUs() {
   return (
     <section id="contact" className="darkBG">

@@ -53,6 +53,16 @@ p {
 #wrapper section {
   height: 50rem;
   margin-top: 68px;
+  div.vidContainer {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    video {
+      width: 30%;
+      height: 100%;
+    }
+  }
 }
 
 .col-section {
@@ -100,7 +110,7 @@ p {
   }
   img {
     width: 100%;
-    height: 350px;
+    max-height: 275px;
     overflow: hidden;
     object-fit: cover;
   }
