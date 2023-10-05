@@ -6,6 +6,7 @@ import { OurSolution } from "./Page/OurSolution";
 import { TheDilemma } from "./Page/TheDilemma";
 import { Founders } from "./Page/Founders";
 import { OurMission } from "./Page/OurMIssion";
+import { OurGoals } from "./Page/OurGoals";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="#our-mission" element={<OurMission />} />
         <Route path="#dilemma" element={<TheDilemma />} />
         <Route path="#solution" element={<OurSolution />} />
+        <Route path="#ourGoals" element={<OurGoals />} />
         <Route path="#founders" element={<Founders />} />
         <Route path="#contact" element={<ContactUs />} />
       </Routes>
@@ -22,6 +24,7 @@ function App() {
         <OurMission />
         <TheDilemma />
         <OurSolution />
+        <OurGoals />
         <Founders />
         <ContactUs />
       </main>

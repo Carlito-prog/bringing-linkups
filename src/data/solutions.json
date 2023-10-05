@@ -1,16 +1,16 @@
 [
     {
-        "url": "src/assets/images/together.jpg",
+        "url": "src/assets/images/pplTogether.jpg",
         "labelText": "One Stop Shop for Events & Gatherings Near You",
         "descriptionText": "We offer a place where you can find events and gatherings near you, and also create your own events and gatherings. We also offer the ability to share your events and gatherings with your friends and family, and also the ability to share your events and gatherings with the people with like-minded interest/hobbies. On a random tuesday either you can find something to do or create something to do and be in neighboring pockets."
     },
     {
-        "url": "src/assets/images/instaSharing.png",
-        "labelText": "Giving Creators Of Events The Ability To Have Full Control Of Their Link",
+        "url": "src/assets/images/donotEnter.jpg",
+        "labelText": "Giving Creators Of Events The Ability To Have Full Control Of Their Rooms",
         "descriptionText": "We allow creators a space where they can create their own events and gatherings. For staters the ability to make rooms a.k.a events public or private, whether you want to interact with just friends you know or inviting new people to your events. The ability to accept or decline who enters your room hence having anonymity with your events. The ability to change times/conditions/location on the fly and not risk who received the update. "
     },
     {
-        "url": "src/assets/images/busylife.jpg",
+        "url": "src/assets/images/navigation.jpg",
         "labelText": "Schedule / Get Reminders / Map Routes Of A Link Up",
         "descriptionText": "With the use of our app, we are giving you the ability to have an excuse free experience when you commit to an event. We offer the ability to schedule your events and gatherings, and the ability to get reminders/notifications to your events and gatherings. We also offer the ability to map out the best routes to your events and gatherings. We'll make sure you make it to your events and gatherings on time, if you want to ofcourse! "
     }

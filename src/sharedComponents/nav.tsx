@@ -67,6 +67,12 @@ function Nav() {
             Our Solution{""}
           </NavLink>
           <NavLink
+            onClick={() => handleClickScroll("ourGoals")}
+            to={"ourGoals"}
+          >
+            Our Goals
+          </NavLink>
+          <NavLink
             onClick={() => handleClickScroll("founders")}
             to={"founders"}
           >
