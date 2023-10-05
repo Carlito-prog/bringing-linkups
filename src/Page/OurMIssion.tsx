@@ -20,8 +20,8 @@ export const OurMission = () => {
         />
         <ImageComponent url={"src/assets/images/blu-logo.png"} alt={"text"} />
         <div className="contactEarly">
-          <h5>Want To Join Our Efforts?</h5>
-          <button onClick={handleClick}>Join Us</button>
+          <h5>Want To Give Us Your Take On BLU?</h5>
+          <button onClick={handleClick}>Lets Talk</button>
         </div>
       </div>
     </section>
