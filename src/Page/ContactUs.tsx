@@ -1,11 +1,11 @@
 import { Formik } from "formik";
 import { ContactFormSchema } from "../utils/contactformvalidation";
 import {
-  TiSocialFacebook,
   TiSocialInstagram,
   TiSocialLinkedin,
   TiSocialTwitter,
 } from "react-icons/ti";
+import { Link } from "react-router-dom";
 // import { sendData } from "../utils/firebase/firebase";
 
 export type formTypes = {
@@ -36,10 +36,30 @@ export const ContactUs = () => {
           <div className="social">
             <h4>Follow us</h4>
             <div className="social-inner">
-              <TiSocialFacebook size={30} />
-              <TiSocialInstagram size={30} />
-              <TiSocialLinkedin size={30} />
-              <TiSocialTwitter size={30} />
+              <Link
+                className="link"
+                to="https://www.instagram.com/calitos_apps/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialInstagram size={30} />
+              </Link>
+              <Link
+                className="link"
+                to="www.linkedin.com/in/carl-verrier-121a0610b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialLinkedin size={30} />
+              </Link>
+              <Link
+                className="link"
+                to="https://twitter.com/vcarl123"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialTwitter size={30} />
+              </Link>
             </div>
           </div>
         </div>

@@ -216,6 +216,10 @@ p {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    .link {
+      color: whitesmoke;
+      text-decoration: none;
+    }
   }
 
   .contact-inner {
