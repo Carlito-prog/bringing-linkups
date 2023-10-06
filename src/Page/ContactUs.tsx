@@ -28,9 +28,9 @@ export const ContactUs = () => {
         <div className="contact-info">
           <h3>Contact Us</h3>
           <p>
-            123 Somewhere Drive
+            407 E Ayre St
             <br />
-            ACity, State 12345
+            Wilmington, DE 19804
           </p>
 
           <div className="social">
@@ -77,6 +77,8 @@ export const ContactUs = () => {
               handleBlur,
               handleSubmit,
               isSubmitting,
+              dirty,
+              isValid,
               /* and other goodies */
             }) => (
               <form id="contact-form" onSubmit={handleSubmit}>
@@ -137,7 +139,10 @@ export const ContactUs = () => {
                     <span className="error">{errors.reason}</span>
                   ) : null}
                 </div>
-                <button type="submit" disabled={isSubmitting}>
+                <button
+                  type="submit"
+                  disabled={!dirty && isValid && isSubmitting}
+                >
                   Submit
                 </button>
               </form>
