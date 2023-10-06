@@ -46,7 +46,7 @@ export const ContactUs = () => {
               </Link>
               <Link
                 className="link"
-                to="www.linkedin.com/in/carl-verrier-121a0610b"
+                to="https://www.linkedin.com/in/carl-verrier-121a0610b"
                 target="_blank"
                 rel="noopener noreferrer"
               >
