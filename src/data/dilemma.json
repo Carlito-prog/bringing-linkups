@@ -1,17 +1,17 @@
 [
     {
         "url": "src/assets/images/alone.jpg",
-        "labelText": "The Want To Connect With Friends Beyond The Internet",
-        "descriptionText": "Studies shows 60% of people wish they saw their friends more while 70% felt excluded from social media,it is hard to find events & to find gatherings with one source where you can interact with friends while scheduling & confirming a link up."
+        "labelText": "The Want To Connect",
+        "descriptionText": "Studies show 60% of people wish they saw their friends more while 70% felt excluded from social media. It is hard to find events & to find gatherings with one source where you can interact with friends while scheduling & confirming a link up."
     },
     {
         "url": "src/assets/images/instaSharing.png",
-        "labelText": "The Way We Use Tech for Events/Gatherings",
-        "descriptionText": "We all either have events through out the year or partake in events through out the year, and the inconvenience it is to invite, confirm, and interact when it comes to having an event or gathering is absolutely ridiculous. Not to mention the amount of research it takes to find something going, makes the experience unbearable at times."
+        "labelText": "The Way We Use Technology Today",
+        "descriptionText": "We all either host or attend events through out the year, and can agree on the inconvenience it is to invite, confirm, and interact when it comes to having an event or gathering. Not to mention the amount of research it takes to find an activity, makes the experience unbearable at times."
     },
     {
         "url": "src/assets/images/busylife.jpg",
-        "labelText": "We Have Busy Lives",
-        "descriptionText": "We all have responsibilities and at times we forget to make time for the things we love with the people we love. We run around so much during the week that we either forget to schedule our hobbies in, miss the time of which we wanted go, or get others to confirm to go with you or not so you know what to do. "
+        "labelText": "We Live Busy Lives",
+        "descriptionText": "We all have responsibilities and at times we forget to make time for the things we love with the people we love. We run around so much during the week that we either forget to schedule our hobbies, miss the time of which we wanted go, or have issues confirming so its difficult to know what to do. "
     }
 ]
