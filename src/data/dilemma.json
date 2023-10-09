@@ -1,16 +1,16 @@
 [
     {
-        "url": "src/assets/images/alone.jpg",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/alone.jpg?alt=media&token=6f60346d-d8b0-4bec-904d-ecf8834d5af2&_gl=1*1r5wtkq*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg0NTcuNC4wLjA.",
         "labelText": "The Want To Connect",
         "descriptionText": "Studies show 60% of people wish they saw their friends more while 70% felt excluded from social media. It is hard to find events & to find gatherings with one source where you can interact with friends while scheduling & confirming a link up."
     },
     {
-        "url": "src/assets/images/instaSharing.png",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/instaSharing.png?alt=media&token=6d5f84b7-6a89-4e80-b9d8-922247179bb2&_gl=1*vlza9f*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg1MzIuNjAuMC4w",
         "labelText": "The Way We Use Technology Today",
         "descriptionText": "We all either host or attend events through out the year, and can agree on the inconvenience it is to invite, confirm, and interact when it comes to having an event or gathering. Not to mention the amount of research it takes to find an activity, makes the experience unbearable at times."
     },
     {
-        "url": "src/assets/images/busylife.jpg",
+        "url": "https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/busylife.jpg?alt=media&token=54e079e0-e05c-415d-b4b3-e6d5d8a4b7aa&_gl=1*1vo59k1*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg1NTYuMzYuMC4w",
         "labelText": "We Live Busy Lives",
         "descriptionText": "We all have responsibilities and at times we forget to make time for the things we love with the people we love. We run around so much during the week that we either forget to schedule our hobbies, miss the time of which we wanted go, or have issues confirming so its difficult to know what to do. "
     }
