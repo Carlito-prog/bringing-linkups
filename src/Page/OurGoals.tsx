@@ -7,8 +7,8 @@ export const OurGoals = () => {
           className="solutionVideo"
           controls
           loop
-          width={"75%"}
-          height={"auto"}
+          width={"20%"}
+          height={"20%"}
         />
       </div>
     </section>
