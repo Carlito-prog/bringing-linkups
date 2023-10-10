@@ -3,7 +3,7 @@ export const OurGoals = () => {
     <section id="ourGoals">
       <div className="darkBG ourGoals-wrp">
         <video
-          src="https://firebasestorage.googleapis.com/v0/b/litos-portfolio.appspot.com/o/Loom%20Message%20-%2011%20April%202023.mp4?alt=media&token=1874c461-4586-4ee6-b448-4653fb7fdf61"
+          src="https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/FounderVIDSITE.mp4?alt=media&token=e28c9670-1404-4940-9a7a-d0a034224627&_gl=1*gebqur*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njk1OTUwNS4xNS4xLjE2OTY5NTk3NTQuNjAuMC4w"
           className="solutionVideo"
           controls
           loop
