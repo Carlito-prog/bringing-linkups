@@ -24,7 +24,7 @@ export const ContactUs = () => {
   };
   return (
     <section id="contact" className="darkBG">
-      <div className="col-section two-col">
+      <div className="col-section two-col mobile-split">
         <div className="contact-info">
           <h3>Contact Us</h3>
           <p>

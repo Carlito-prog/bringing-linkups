@@ -1,14 +1,14 @@
-import React from "react"
+import React from "react";
 
 type ImageComponentType = {
-  alt: string,
-  url: string
-}
+  alt: string;
+  url: string;
+};
 
-export const ImageComponent:React.FC<ImageComponentType> = ({alt, url}) => {
+export const ImageComponent: React.FC<ImageComponentType> = ({ alt, url }) => {
   return (
     <div className="image">
-      <img src={url} alt={alt} width="100%" height="auto"/>
+      <img src={url} alt={alt} width="100%" height="auto" />
     </div>
-  )
-}
+  );
+};

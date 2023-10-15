@@ -11,7 +11,7 @@ export const OurMission = () => {
 
   return (
     <section id="our-mission" className="darkBG">
-      <div className="col-section two-col">
+      <div className="col-section two-col mobile-split">
         <TextComponent
           title={"Our Mission"}
           text={
@@ -24,7 +24,7 @@ export const OurMission = () => {
           }
           alt={"text"}
         />
-        <div className="contactEarly">
+        <div className="contactEarly displayNothing">
           <h5>Want To Give Us Your Take On BLU?</h5>
           <button onClick={handleClick}>Lets Talk</button>
         </div>

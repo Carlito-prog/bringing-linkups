@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 #root {
@@ -35,6 +36,9 @@ p {
 }
 .nav-wrp.hidden {
   top: -100px;
+}
+.hamburgerInner {
+  display: none;
 }
 .navInner {
   display: flex;
@@ -181,12 +185,10 @@ p {
     align-content: center;
   }
 }
-#ourGoals .ourGoals-wrp {
+.ourGoals {
   display: flex;
   justify-content: center;
-  video {
-    margin-bottom: 2rem;
-  }
+  align-content: center;
 }
 #contact {
   .two-col {
@@ -275,5 +277,71 @@ p {
 
   label {
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #wrapper section {
+    height: 100%;
+  }
+  #our-mission {
+    margin-top: 80px;
+  }
+  .nav-wrp {
+  }
+  .bm-burger-button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 9px;
+    top: 6px;
+  }
+  .hamburgerInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .hamburger {
+    }
+  }
+  .bm-burger-button {
+    width: 100%;
+  }
+  .navInner {
+    display: none;
+  }
+  .link-wrp {
+    flex-direction: column;
+  }
+  .three-col-inner {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+  }
+  .three-col-inner .col {
+    max-width: 95%;
+    width: 100%;
+  }
+  .darkBG {
+  }
+  #founders .image {
+    display: none;
+  }
+  .two-col .info,
+  .two-col .image {
+    width: 100%;
+    margin: 0 50px;
+  }
+  .two-col h3 {
+    color: #7c73d9;
+    font-size: 3.096rem;
+    line-height: 0.8;
+  }
+  .displayNothing {
+    display: none;
+  }
+  .mobile-split {
+    flex-direction: column-reverse;
   }
 }
