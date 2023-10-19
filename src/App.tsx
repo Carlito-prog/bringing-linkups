@@ -9,6 +9,7 @@ import { OurMission } from "./Page/OurMIssion";
 import { OurGoals } from "./Page/OurGoals";
 
 function App() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Nav />
@@ -28,6 +29,9 @@ function App() {
         <Founders />
         <ContactUs />
       </main>
+      <p className="copyrights-text">
+        ©{currentYear} Bringing Link Ups. All Rights Reserved.
+      </p>
     </>
   );
 }

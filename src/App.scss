@@ -11,6 +11,9 @@ body {
 
 #root {
   font-family: $primary-font;
+  .copyrights-text {
+    text-align: center;
+  }
 }
 /* Global Styles */
 .error {
