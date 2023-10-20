@@ -6,8 +6,12 @@ import {
   TiSocialTwitter,
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
-// import { sendData } from "../utils/firebase/firebase";
+import AWS from "aws-sdk";
+const process = import.meta.env;
 
+const awsAccessKey = process.VITE_AWS_ACCESS_KEY_ID;
+const awsSecretKey = process.VITE_AWS_SECRET_ACCESS_KEY;
+const awsBucketName = process.VITE_AWS_BUCKET_NAME;
 export type formTypes = {
   fullName: string;
   email: string;
@@ -69,6 +73,30 @@ export const ContactUs = () => {
             validationSchema={ContactFormSchema}
             onSubmit={async (values, { resetForm }) => {
               console.log(values);
+
+              const s3 = new AWS.S3({
+                region: "us-east-1",
+                credentials: new AWS.Credentials(
+                  awsAccessKey as string,
+                  awsSecretKey as string
+                ), // Ideally use IAM roles and not hard-coded credentials
+              });
+
+              const params = {
+                Bucket: awsBucketName as string,
+                Key: `${values.email}.json`,
+                Body: JSON.stringify(values),
+              };
+
+              try {
+                await s3.putObject(params).promise();
+                console.log("Data uploaded successfully");
+                alert("Data uploaded successfully");
+              } catch (error) {
+                console.error("Error uploading data:", error);
+                alert("Error uploading data try again later");
+              }
+
               resetForm({
                 values: {
                   fullName: "",
@@ -77,16 +105,6 @@ export const ContactUs = () => {
                   reason: "",
                 },
               });
-              // await sendData(values).then(() => {
-              //   resetForm({
-              //     values: {
-              //       fullName: "",
-              //       email: "",
-              //       phone: "",
-              //       reason: "",
-              //     },
-              //   });
-              // });
             }}
           >
             {({
