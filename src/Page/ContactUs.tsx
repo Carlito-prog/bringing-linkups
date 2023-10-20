@@ -7,11 +7,11 @@ import {
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import AWS from "aws-sdk";
-const process = import.meta.env;
+const define = import.meta.env;
 
-const awsAccessKey = process.VITE_AWS_ACCESS_KEY_ID;
-const awsSecretKey = process.VITE_AWS_SECRET_ACCESS_KEY;
-const awsBucketName = process.VITE_AWS_BUCKET_NAME;
+const awsAccessKey = define.VITE_AWS_ACCESS_KEY_ID;
+const awsSecretKey = define.VITE_AWS_SECRET_ACCESS_KEY;
+const awsBucketName = define.VITE_AWS_BUCKET_NAME;
 export type formTypes = {
   fullName: string;
   email: string;
