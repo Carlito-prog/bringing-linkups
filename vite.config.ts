@@ -7,7 +7,5 @@ export default defineConfig({
   server: {
     open: true,
   },
-  define: {
-    _global: ({})
-}
+  define: {global: 'window'}
 })
