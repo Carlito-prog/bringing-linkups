@@ -31,9 +31,9 @@ export const ContactUs = () => {
         <div className="contact-info">
           <h3>Contact Us</h3>
           <p>
-            407 E Ayre St
+            1405 Dewar Dr. #1190
             <br />
-            Wilmington, DE 19804
+            Rock Springs, Wyoming 82901 US
           </p>
 
           <div className="social">
