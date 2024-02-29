@@ -8,7 +8,7 @@ type textComponentType = {
 export const TextComponent: React.FC<textComponentType> = ({ title, text }) => {
   return (
     <div className="info">
-      <h3>{title}</h3>
+      <h3 style={{ lineHeight: 1.1, }}>{title}</h3>
       <p>{text}</p>
     </div>
   );

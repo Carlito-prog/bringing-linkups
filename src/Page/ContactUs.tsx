@@ -6,7 +6,6 @@ import {
   TiSocialTwitter,
 } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import AWS from "aws-sdk";
 
 export type formTypes = {
   fullName: string;
@@ -16,9 +15,6 @@ export type formTypes = {
 };
 
 export const ContactUs = () => {
-  const awsAccessKey = import.meta.env.VITE_AWS_ACCESS_KEY_ID;
-  const awsSecretKey = import.meta.env.VITE_AWS_SECRET_ACCESS_KEY;
-  const awsBucketName = import.meta.env.VITE_AWS_BUCKET_NAME;
   const initialValues: formTypes = {
     fullName: "",
     email: "",
@@ -70,31 +66,11 @@ export const ContactUs = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={ContactFormSchema}
-            onSubmit={async (values, { resetForm }) => {
-              console.log(values);
-
-              const s3 = new AWS.S3({
-                region: "us-east-1",
-                credentials: new AWS.Credentials(
-                  awsAccessKey as string,
-                  awsSecretKey as string
-                ), // Ideally use IAM roles and not hard-coded credentials
-              });
-
-              const params = {
-                Bucket: awsBucketName as string,
-                Key: `${values.email}.json`,
-                Body: JSON.stringify(values),
-              };
-
-              try {
-                await s3.putObject(params).promise();
-                console.log("Data uploaded successfully");
-                alert("Data uploaded successfully");
-              } catch (error) {
-                console.error("Error uploading data:", error);
-                alert("Error uploading data try again later");
-              }
+            onSubmit={async (
+              values,
+              { resetForm }) => {
+              console.log(values)
+              alert("Data was sent & follow our socials");
 
               resetForm({
                 values: {
