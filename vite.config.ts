@@ -9,7 +9,7 @@ export default defineConfig({
   },
   define: {global: 'window'},
   build: {
-    outDir: 'build',
+    outDir: 'dist',
     sourcemap: true,
     commonjsOptions: {
       include: [/node/, /node_modules/],
