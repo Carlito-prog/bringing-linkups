@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import MobileNav from "./mobileNav";
 
-function Nav() {
+export function Nav() {
   const [show, setShow] = useState(true);
   const [previousScrollPos, setPreviousScrollPos] = useState(0);
 
@@ -92,4 +92,3 @@ function Nav() {
   );
 }
 
-export default Nav;

@@ -10,14 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.431.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "@types/aws-sdk": "^2.7.0",
     "@types/react-router-dom": "^5.3.3",
-    "aws-sdk": "^2.1477.0",
     "axios": "^1.5.1",
     "formik": "^2.4.5",
     "hamburger-react": "^2.5.0",

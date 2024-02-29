@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Nav from "./sharedComponents/nav";
+import { Nav } from "./sharedComponents/nav";
 import { ContactUs } from "./Page/ContactUs";
 import { OurSolution } from "./Page/OurSolution";
 import { TheDilemma } from "./Page/TheDilemma";
