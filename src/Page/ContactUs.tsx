@@ -33,7 +33,7 @@ export const ContactUs = () => {
           </p>
 
           <div className="social">
-            <h4>Follow us</h4>
+            <h4>Follow Us</h4>
             <div className="social-inner">
               <Link
                 className="link"
