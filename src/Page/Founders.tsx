@@ -16,6 +16,7 @@ export const Founders = () => {
             "https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/Me.jpeg?alt=media&token=822fc054-bd40-4d41-abc3-7554863a418c&_gl=1*1i1mq5n*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg0MTIuNDkuMC4w"
           }
           alt={"Founder-Picture"}
+          styles={{ borderRadius: 15 }}
         />
       </div>
     </section>

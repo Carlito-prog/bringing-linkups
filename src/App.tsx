@@ -30,7 +30,7 @@ function App() {
         <ContactUs />
       </main>
       <p className="copyrights-text">
-        ©{currentYear} Bringing Link Ups. All Rights Reserved.
+        ©{currentYear} Bringing Link Ups LLC. All Rights Reserved.
       </p>
     </>
   );
