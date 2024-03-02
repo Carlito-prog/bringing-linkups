@@ -53,7 +53,7 @@ export const ContactUs = () => {
               </Link>
               <Link
                 className="link"
-                to="https://twitter.com/vcarl123"
+                to="https://twitter.com/BringingLinkUps"
                 target="_blank"
                 rel="noopener noreferrer"
               >
