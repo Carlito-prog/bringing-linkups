@@ -3,8 +3,9 @@ import { ContactFormSchema } from "../utils/contactformvalidation";
 import {
   TiSocialInstagram,
   TiSocialLinkedin,
-  TiSocialTwitter,
+  TiSocialTwitter
 } from "react-icons/ti";
+import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export type formTypes = {
@@ -58,6 +59,14 @@ export const ContactUs = () => {
                 rel="noopener noreferrer"
               >
                 <TiSocialTwitter size={30} />
+              </Link>
+              <Link
+                className="link"
+                onClick={() => alert("+1 (307) 336-3646")}
+                to="/"
+                rel="noopener noreferrer"
+              >
+                <FaPhoneAlt size={23} />
               </Link>
             </div>
           </div>
