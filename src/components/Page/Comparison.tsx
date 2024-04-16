@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
-import { ComparisonDataType, ComparisonTable } from "../comparisionTable"
+import { ComparisonDataType, ComparisonTable } from "../sharedComponents/comparisionTable"
 import { competitorData } from "../../data/comparison"
 
 export const Comparison = () => {
