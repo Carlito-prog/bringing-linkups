@@ -176,20 +176,84 @@ p {
   }
 }
 
-#wrapper section {
-  .sectionTitle {
+#founders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
     color: #7c73d9;
     font-size: $main-title-size;
     line-height: 1.875rem;
     text-align: center;
     padding: 30px;
-    margin: 20px 0;
+    margin: 28px 0;
   }
-  .col-section {
-    flex: 1;
+  .cardholder-cont {
+    display: flex;
+    position: relative;
+    width: 60%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 40px 0px;
+  }
+  .left-arrow-cont,
+  .right-arrow-cont {
+    position: absolute;
     display: flex;
     justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-arrow-cont {
+    left: 120px;
+  }
+  .right-arrow-cont {
+    right: 120px;
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  .avatar {
+    max-width: 275px;
+    height: 275px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 8px 0px;
+    h4 {
+      text-align: center;
+    }
   }
 }
 .ourGoals {
@@ -239,7 +303,7 @@ p {
     width: 3rem;
   }
   .blu-comparison {
-    max-width: 50%;
+    width: 50%;
     padding: 20px;
     margin: 10px 0px;
     p {
@@ -347,7 +411,8 @@ p {
   #our-mission {
     margin-top: 80px;
   }
-  .nav-wrp {
+  .blu-comparison {
+    width: 95% !important;
   }
   .bm-burger-button {
     position: absolute;
@@ -361,8 +426,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .hamburger {
-    }
   }
   .bm-burger-button {
     width: 100%;
@@ -383,10 +446,12 @@ p {
     max-width: 95%;
     width: 100%;
   }
-  .darkBG {
-  }
   #founders .image {
     display: none;
+  }
+  .cardholder-cont {
+    width: 100% !important;
+    position: relative;
   }
   .two-col .info,
   .two-col .image {
@@ -403,5 +468,12 @@ p {
   }
   .mobile-split {
     flex-direction: column-reverse;
+  }
+  .left-arrow-cont {
+    position: absolute;
+    left: 2px !important;
+  }
+  .right-arrow-cont {
+    right: 2px !important;
   }
 }

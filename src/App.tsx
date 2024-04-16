@@ -8,7 +8,6 @@ import { Founders } from "./components/Page/Founders";
 import { OurMission } from "./components/Page/OurMIssion";
 import { OurGoals } from "./components/Page/OurGoals";
 import { Comparison } from "./components/Page/Comparison";
-import { FounderSection } from "./components/sharedComponents/founderSection";
 
 function App() {
   const currentYear = new Date().getFullYear();
@@ -29,9 +28,7 @@ function App() {
         <TheDilemma />
         <OurSolution />
         <OurGoals />
-        <FounderSection>
-          <Founders />
-        </FounderSection>
+        <Founders />
         <Comparison />
         <ContactUs />
       </main>

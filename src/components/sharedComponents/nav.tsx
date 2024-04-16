@@ -47,7 +47,7 @@ export function Nav() {
       />
       <div className="navInner">
         <div className="logo-wrp">
-          <NavLink onClick={() => handleClickScrollTop()} to={"/"}>
+          <NavLink onClick={() => handleClickScrollTop()} to={"our-mission"}>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/blu-logo-white.png?alt=media&token=a5c69472-2fff-44f1-9498-03cee80304f6&_gl=1*w82l82*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg3MTMuNjAuMC4w"
               alt="Bringing Link Ups"
