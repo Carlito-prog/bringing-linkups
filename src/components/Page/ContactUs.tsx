@@ -1,5 +1,5 @@
 import { Formik } from "formik";
-import { ContactFormSchema } from "../utils/contactformvalidation";
+import { ContactFormSchema } from "../../utils/contactformvalidation";
 import {
   TiSocialInstagram,
   TiSocialLinkedin,

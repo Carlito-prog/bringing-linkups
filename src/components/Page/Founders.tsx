@@ -1,9 +1,16 @@
-import { TextComponent } from "../components/TextComponent";
-import { ImageComponent } from "../components/ImageComponent";
+// import { FounderCard } from "../sharedComponents/founderCard";
+// import foundersData from "../../data/founders.json"
+import { TextComponent } from "../sharedComponents/TextComponent";
+import { ImageComponent } from "../sharedComponents/ImageComponent";
 
 export const Founders = () => {
+
   return (
     <section id="founders">
+      {/* <h2> Meet Our Founders</h2>
+      {foundersData.map((founderData) =>
+        <FounderCard data={founderData} />
+      )} */}
       <div className="col-section two-col">
         <TextComponent
           title={"Discover Our Founder's Captivating Journey: Carl Verrier"}
