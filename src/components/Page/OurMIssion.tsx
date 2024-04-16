@@ -1,5 +1,5 @@
-import { TextComponent } from "../components/TextComponent";
-import { ImageComponent } from "../components/ImageComponent";
+import { TextComponent } from "../sharedComponents/TextComponent";
+import { ImageComponent } from "../sharedComponents/ImageComponent";
 
 export const OurMission = () => {
   const handleClick = () => {

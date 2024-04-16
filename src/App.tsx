@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import { Nav } from "./sharedComponents/nav";
-import { ContactUs } from "./Page/ContactUs";
-import { OurSolution } from "./Page/OurSolution";
-import { TheDilemma } from "./Page/TheDilemma";
-import { Founders } from "./Page/Founders";
-import { OurMission } from "./Page/OurMIssion";
-import { OurGoals } from "./Page/OurGoals";
+import { Nav } from "./components/sharedComponents/nav";
+import { ContactUs } from "./components/Page/ContactUs";
+import { OurSolution } from "./components/Page/OurSolution";
+import { TheDilemma } from "./components/Page/TheDilemma";
+import { Founders } from "./components/Page/Founders";
+import { OurMission } from "./components/Page/OurMIssion";
+import { OurGoals } from "./components/Page/OurGoals";
+import { Comparison } from "./components/Page/Comparison";
+import { FounderSection } from "./components/sharedComponents/founderSection";
 
 function App() {
   const currentYear = new Date().getFullYear();
@@ -19,6 +21,7 @@ function App() {
         <Route path="#solution" element={<OurSolution />} />
         <Route path="#ourGoals" element={<OurGoals />} />
         <Route path="#founders" element={<Founders />} />
+        <Route path="#comparisons" element={<Comparison />} />
         <Route path="#contact" element={<ContactUs />} />
       </Routes>
       <main id="wrapper">
@@ -26,7 +29,10 @@ function App() {
         <TheDilemma />
         <OurSolution />
         <OurGoals />
-        <Founders />
+        <FounderSection>
+          <Founders />
+        </FounderSection>
+        <Comparison />
         <ContactUs />
       </main>
       <p className="copyrights-text">

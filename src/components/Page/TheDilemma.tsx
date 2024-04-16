@@ -1,5 +1,5 @@
-import { ThreeColumns } from "../components/threeColumns";
-import data from "../../src/data/dilemma.json";
+import { ThreeColumns } from "../sharedComponents/threeColumns";
+import data from "../../data/dilemma.json";
 
 export const TheDilemma = () => {
   return (

@@ -63,7 +63,11 @@ p {
   }
 }
 
-#wrapper section {
+:not #wrapper section {
+  height: fit-content;
+}
+
+#our-mission {
   height: 50rem;
 }
 
@@ -193,7 +197,60 @@ p {
   justify-content: center;
   align-content: center;
 }
+#comparisons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+    color: $main-title-color;
+    line-height: 1.875rem;
+    font-size: $main-title-size;
+  }
+  table {
+    width: 90%;
+    padding: 20px 0;
+    margin: 8px 0;
+    border: 1px solid $main-title-color;
+    height: fit-content;
+  }
+  th td {
+    border: 1px solid $main-title-color;
+    border: #dddddd;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .blu-logo {
+    max-width: 10rem;
+  }
+  .competitors-logo {
+    max-width: 8rem;
+    object-fit: contain;
+  }
+  td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3rem;
+  }
+  .blu-comparison {
+    max-width: 50%;
+    padding: 20px;
+    margin: 10px 0px;
+    p {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  }
+}
 #contact {
+  height: 40rem;
   .two-col {
     > div {
       display: flex;

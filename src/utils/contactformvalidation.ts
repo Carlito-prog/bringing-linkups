@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { formTypes } from '../Page/ContactUs';
+import { formTypes } from '../components/Page/ContactUs';
 
 export const ContactFormSchema = Yup.object<formTypes>({
     fullName: Yup.string()
