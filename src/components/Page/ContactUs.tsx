@@ -7,6 +7,7 @@ import {
 } from "react-icons/ti";
 import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useSend } from "../../utils/sendInfoHook";
 
 export type formTypes = {
   fullName: string;
@@ -16,6 +17,8 @@ export type formTypes = {
 };
 
 export const ContactUs = () => {
+  const { sendEmail } = useSend()
+
   const initialValues: formTypes = {
     fullName: "",
     email: "",
@@ -78,17 +81,19 @@ export const ContactUs = () => {
             onSubmit={async (
               values,
               { resetForm }) => {
-              console.log(values)
-              alert("Data was sent & follow our socials");
-
-              resetForm({
-                values: {
-                  fullName: "",
-                  email: "",
-                  phone: "",
-                  reason: "",
-                },
-              });
+              await sendEmail(values).then((data) => {
+                localStorage.setItem('sentContact', `${data}`);
+                resetForm({
+                  values: {
+                    fullName: "",
+                    email: "",
+                    phone: "",
+                    reason: "",
+                  },
+                });
+              }).catch(() => {
+                alert("An error occurred")
+              })
             }}
           >
             {({

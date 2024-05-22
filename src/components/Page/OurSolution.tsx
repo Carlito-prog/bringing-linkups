@@ -1,5 +1,5 @@
 import solutions from "../../data/solutions.json";
-import { ThreeColumns } from "../sharedComponents/threeColumns";
+import { ThreeColumns } from "../../data/threeColumns";
 
 export const OurSolution = () => {
   return (
