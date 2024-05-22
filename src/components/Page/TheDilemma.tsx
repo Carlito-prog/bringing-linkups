@@ -1,4 +1,4 @@
-import { ThreeColumns } from "../sharedComponents/threeColumns";
+import { ThreeColumns } from "../../data/threeColumns";
 import data from "../../data/dilemma.json";
 
 export const TheDilemma = () => {
