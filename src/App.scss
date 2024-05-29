@@ -378,7 +378,7 @@ p {
     input,
     textarea {
       background-color: transparent;
-      color: white;
+      color: black;
       font-size: 14px;
       padding-left: 5px;
     }
@@ -391,16 +391,16 @@ p {
       border-right: none;
       border-bottom: 0.25px;
       border-bottom-style: solid;
-      border-bottom-color: white;
+      border-bottom-color: $secondary-color;
       height: 30px;
     }
     textarea {
-      border: 0.5px solid white;
+      border: 0.5px solid $secondary-color;
       resize: none;
       margin-top: 20px;
     }
     ::placeholder {
-      color: white;
+      color: black;
       font-family: $primary-font;
     }
     span {
@@ -409,8 +409,8 @@ p {
     }
     button {
       background: transparent;
-      border: 1px solid white;
-      color: white;
+      border: 1px solid $main-color;
+      color: black;
       letter-spacing: 0.15rem;
       margin-top: 20px;
       text-transform: uppercase;
