@@ -28,52 +28,6 @@ export const ContactUs = () => {
   return (
     <section id="contact" className="darkBG">
       <div className="col-section two-col mobile-split">
-        <div className="contact-info">
-          <h3>Contact Us</h3>
-          <p>
-            1405 Dewar Dr. #1190
-            <br />
-            Rock Springs, Wyoming 82901 US
-          </p>
-
-          <div className="social">
-            <h4>Follow Us</h4>
-            <div className="social-inner">
-              <Link
-                className="link"
-                to="https://www.instagram.com/calitos_apps/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TiSocialInstagram size={30} />
-              </Link>
-              <Link
-                className="link"
-                to="https://www.linkedin.com/company/bringing-inkups/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TiSocialLinkedin size={30} />
-              </Link>
-              <Link
-                className="link"
-                to="https://twitter.com/BringingLinkUps"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TiSocialTwitter size={30} />
-              </Link>
-              <Link
-                className="link"
-                onClick={() => alert("+1 (307) 336-3646")}
-                to="/"
-                rel="noopener noreferrer"
-              >
-                <FaPhoneAlt size={23} />
-              </Link>
-            </div>
-          </div>
-        </div>
         <div className="contact-inner">
           <Formik
             initialValues={initialValues}
@@ -81,8 +35,8 @@ export const ContactUs = () => {
             onSubmit={async (
               values,
               { resetForm }) => {
-              await sendEmail(values).then((data) => {
-                localStorage.setItem('sentContact', `${data}`);
+              await sendEmail(values).then(() => {
+                localStorage.setItem('sentContact', "true");
                 resetForm({
                   values: {
                     fullName: "",
@@ -106,7 +60,6 @@ export const ContactUs = () => {
               isSubmitting,
               dirty,
               isValid,
-              /* and other goodies */
             }) => (
               <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
@@ -175,6 +128,52 @@ export const ContactUs = () => {
               </form>
             )}
           </Formik>
+        </div>
+        <div className="contact-info">
+          <h3>Contact Us</h3>
+          <p>
+            1405 Dewar Dr. #1190
+            <br />
+            Rock Springs, Wyoming 82901 US
+          </p>
+
+          <div className="social">
+            <h4>Follow Us</h4>
+            <div className="social-inner">
+              <Link
+                className="link"
+                to="https://www.instagram.com/calitos_apps/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialInstagram size={30} />
+              </Link>
+              <Link
+                className="link"
+                to="https://www.linkedin.com/company/bringing-inkups/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialLinkedin size={30} />
+              </Link>
+              <Link
+                className="link"
+                to="https://twitter.com/BringingLinkUps"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiSocialTwitter size={30} />
+              </Link>
+              <Link
+                className="link"
+                onClick={() => alert("+1 (307) 336-3646")}
+                to="/"
+                rel="noopener noreferrer"
+              >
+                <FaPhoneAlt size={23} />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

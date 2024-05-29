@@ -22,6 +22,7 @@ body {
 
 p {
   line-height: 1.76rem;
+  color: $main-title-color;
 }
 
 .darkBG {
@@ -30,12 +31,16 @@ p {
 }
 
 .nav-wrp {
-  background-color: indigo;
+  background-color: $main-color;
   position: fixed;
   width: 100%;
   height: 80px;
   top: 0;
   z-index: 1;
+  img {
+    height: 60px;
+    aspect-ratio: 8 / 6;
+  }
 }
 .nav-wrp.hidden {
   top: -100px;
@@ -69,6 +74,9 @@ p {
 
 #our-mission {
   height: 50rem;
+  h5 {
+    color: $main-color;
+  }
 }
 
 .col-section {
@@ -138,6 +146,22 @@ p {
     font-weight: 700;
     line-height: 3rem;
   }
+  .input-outer {
+    max-height: fit-content;
+    margin-bottom: 20px;
+    padding: 7px, 20px;
+  }
+  .input-early {
+    border: $main-color solid 3px;
+    border-radius: 10px;
+    height: 1.8rem;
+    width: 70%;
+  }
+  ::placeholder {
+    text-align: center;
+    color: black;
+    font-family: $primary-font;
+  }
 }
 
 #contact-form {
@@ -181,7 +205,7 @@ p {
   flex-direction: column;
   align-items: center;
   h2 {
-    color: #7c73d9;
+    color: $main-title-color;
     font-size: $main-title-size;
     line-height: 1.875rem;
     text-align: center;
@@ -233,7 +257,7 @@ p {
     max-width: 275px;
     height: 275px;
     box-sizing: border-box;
-    border: 5px white solid;
+    border: 5px $main-color solid;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -253,6 +277,7 @@ p {
     margin: 8px 0px;
     h4 {
       text-align: center;
+      color: $main-title-color;
     }
   }
 }
@@ -406,7 +431,7 @@ p {
 
 @media (max-width: 768px) {
   #wrapper section {
-    height: 100%;
+    height: fit-content;
   }
   #our-mission {
     margin-top: 80px;
@@ -459,15 +484,16 @@ p {
     margin: 0 50px;
   }
   .two-col h3 {
-    color: #7c73d9;
+    color: $main-title-color;
     font-size: 3.096rem;
     line-height: 0.8;
   }
-  .displayNothing {
-    display: none;
+
+  .contactEarly {
+    position: relative;
   }
   .mobile-split {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .left-arrow-cont {
     position: absolute;
