@@ -38,17 +38,17 @@ export const OurMission = () => {
   return (
     <section id="our-mission" className="darkBG">
       <div className="col-section two-col mobile-split">
-        <TextComponent
-          title={"Our Mission"}
-          text={
-            "Bringing People Together Based On Proximity & Interest To Events They Love!"
-          }
-        />
         <ImageComponent
           url={
             "https://firebasestorage.googleapis.com/v0/b/bringinglinkups.appspot.com/o/BLU-logo-bare.png?alt=media&token=ce3bc67c-4d7a-4456-b46d-8bb4bd34515d"
           }
           alt={"bringing-link-ups-logo"}
+        />
+        <TextComponent
+          title={"Our Mission"}
+          text={
+            "Bringing People Together Based On Proximity & Interest To Events They Love!"
+          }
         />
         <div className="contactEarly">
           <h5>Join our wait list for special perks, and early access to BLU!</h5>
