@@ -1,8 +1,15 @@
 /* Colors */
-$dark-bg: #0f0015;
+$dark-bg: linear-gradient(
+  90deg,
+  rgba(179, 109, 26, 1) 0%,
+  rgba(199, 157, 101, 0.8688068977591037) 37%,
+  rgba(252, 248, 191, 1) 100%
+);
 $light-bg: #7600a9;
-$main-title-color: #7c73d9;
-
+$main-title-color: #181e44;
+$main-color: #181e44;
+$secondary-text-color: #dfab50;
+$secondary-color: rgb(179, 109, 26);
 /* Fonts */
 $primary-font: "Lato", sans-serif;
 $secondary-font: "Bad Script", sans-serif;

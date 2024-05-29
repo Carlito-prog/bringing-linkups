@@ -1,11 +1,37 @@
 import { TextComponent } from "../sharedComponents/TextComponent";
 import { ImageComponent } from "../sharedComponents/ImageComponent";
+import { Form, Formik } from "formik";
+import CustomInput from "../sharedComponents/customInput";
+import { emailValidationSchema } from "../../utils/contactformvalidation";
+import { useSend } from "../../utils/sendInfoHook";
+
+interface FormValues {
+  email: string;
+}
 
 export const OurMission = () => {
-  const handleClick = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const initialValues: FormValues = {
+    email: '',
+  };
+  const { sendEmail } = useSend()
+
+  const handleSubmit = (values: FormValues) => {
+
+    if (values.email) {
+      const email = {
+        email: values.email,
+        phone: "early form - No Contact",
+        reason: "early form - No Contact",
+        fullName: "early form - No Contact"
+      }
+
+      sendEmail(email).then(() => {
+        localStorage.setItem('sentContact', "true");
+      }).catch(() => {
+        alert("An error occurred")
+      })
+    } else {
+      alert("must enter an email")
     }
   };
 
@@ -20,13 +46,32 @@ export const OurMission = () => {
         />
         <ImageComponent
           url={
-            "https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/blu-logo.png?alt=media&token=98ff515c-a1a3-4721-9e6e-6006b11b7524&_gl=1*ebc3mr*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg2NTkuNi4wLjA."
+            "https://firebasestorage.googleapis.com/v0/b/bringinglinkups.appspot.com/o/BLU-logo-bare.png?alt=media&token=ce3bc67c-4d7a-4456-b46d-8bb4bd34515d"
           }
-          alt={"text"}
+          alt={"bringing-link-ups-logo"}
         />
-        <div className="contactEarly displayNothing">
-          <h5>Want To Give Us Your Take On BLU?</h5>
-          <button onClick={handleClick}>Lets Talk</button>
+        <div className="contactEarly">
+          <h5>Join our wait list for special perks, and early access to BLU!</h5>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={emailValidationSchema}
+            onSubmit={handleSubmit}
+          >
+            {({ isSubmitting }) => (
+              <Form>
+                <CustomInput
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  outerDiv="input-outer"
+                  inputClassName="input-early"
+                />
+                <button type="submit" disabled={isSubmitting}>
+                  Submit
+                </button>
+              </Form>
+            )}
+          </Formik>
         </div>
       </div>
     </section>
