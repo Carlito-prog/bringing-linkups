@@ -391,11 +391,11 @@ p {
       border-right: none;
       border-bottom: 0.25px;
       border-bottom-style: solid;
-      border-bottom-color: $secondary-color;
+      border-bottom-color: $main-color;
       height: 30px;
     }
     textarea {
-      border: 0.5px solid $secondary-color;
+      border: 0.5px solid $main-color;
       resize: none;
       margin-top: 20px;
     }
