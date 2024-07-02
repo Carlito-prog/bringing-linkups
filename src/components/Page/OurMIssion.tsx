@@ -40,14 +40,14 @@ export const OurMission = () => {
       <div className="col-section two-col mobile-split">
         <ImageComponent
           url={
-            "https://firebasestorage.googleapis.com/v0/b/bringinglinkups.appspot.com/o/BLU-logo-bare.png?alt=media&token=ce3bc67c-4d7a-4456-b46d-8bb4bd34515d"
+            "https://firebasestorage.googleapis.com/v0/b/bringinglinkups.appspot.com/o/Bringing-Link-Ups-logo.png?alt=media&token=f56dbbbc-eb7d-40d6-8da3-3ff2f21d0821"
           }
           alt={"bringing-link-ups-logo"}
         />
         <TextComponent
           title={"Our Mission"}
           text={
-            "Bringing People Together Based On Proximity & Interest To Events They Love!"
+            "Bringing People Together Based On Interest In Proximity To Gatherings They Love!"
           }
         />
         <div className="contactEarly">
