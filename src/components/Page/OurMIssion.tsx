@@ -47,7 +47,7 @@ export const OurMission = () => {
         <TextComponent
           title={"Our Mission"}
           text={
-            "Bringing People Together Based On Interest In Proximity To Gatherings They Love!"
+            "Bringing People Together Based On Interest In Proximity To Events They Love!"
           }
         />
         <div className="contactEarly">
