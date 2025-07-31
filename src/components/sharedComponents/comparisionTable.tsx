@@ -29,7 +29,7 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({
                 <tr>
                     <th></th>
                     <th>
-                        <img src="https://firebasestorage.googleapis.com/v0/b/bringing-link-ups.appspot.com/o/blu-logo.png?alt=media&token=98ff515c-a1a3-4721-9e6e-6006b11b7524&_gl=1*ebc3mr*_ga*MjA5MDUxODA4Ny4xNjk2Mjk5ODE1*_ga_CW55HF8NVT*MTY5Njg1NzYxMC4xMS4xLjE2OTY4NTg2NTkuNi4wLjA." className='blu-logo' aria-label='blu-logo' />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/bringinglinkups.appspot.com/o/Bringing%20Link%20Ups%20logo-fav%20icon%202.png?alt=media&token=aca82db7-d524-4036-983a-7c52c4eb58e7" className='blu-logo' aria-label='blu-logo' />
                         <h4> {BluData.companyName} </h4>
                     </th>
                     <th>

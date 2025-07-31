@@ -29,7 +29,11 @@ export const Comparison = () => {
             <ComparisonTable comparisonData={competitorText} />
             <div className="blu-comparison">
                 <p>
-                    At our core we are a social event planner always in your pocket, but equally as important, we're a hub to people build, find, create community! Here at Bringing Link Ups we realize no one is going to help us out of the despair of finding our tribe our community of people. Somewhere along the line the companies that chose to help connect us refuse to find a solution. Where people actually connect with one another physically and even if it is online... we believe you should have the choice to share it in the comfort of your people who understand the most your community!
+                    At our core, Bringing Link Ups (BLU) is a social event platform in your pocket. But more importantly, we’re a hub where people can build, discover, and create real community with a social media feel.
+
+                    We understand the struggle of trying to find your tribe in a world that’s constantly moving. The platforms built to connect us have fallen short—focusing more on followers than real-world friendships.
+
+                    BLU is different. Whether you're meeting up in person or sharing moments online, we believe you should have the freedom to connect in ways that feel meaningful—with people who get you. This is your space, your community, your link up.
                 </p>
             </div>
         </section>
