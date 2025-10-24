@@ -33,7 +33,7 @@ function App() {
         <ContactUs />
       </main>
       <p className="copyrights-text">
-        ©2023 - {currentYear} Bringing Link Ups LLC. All Rights Reserved.
+        ©2024 - {currentYear} Bringing Link Ups LLC. All Rights Reserved.
       </p>
     </>
   );
