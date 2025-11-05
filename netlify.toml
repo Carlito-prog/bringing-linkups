@@ -1,0 +1,29 @@
+# netlify.toml
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+
+# Redirect rules for clean URLs
+[[redirects]]
+  from = "/stripe/return"
+  to = "/stripe-return.html"
+  status = 200
+
+[[redirects]]
+  from = "/stripe/refresh"
+  to = "/stripe-refresh.html"
+  status = 200
+
+# SPA fallback - must be last
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
