@@ -5,9 +5,7 @@
       {
         "appID": "H5AD8JW3RY.com.bringingLinksUp.bringingLinksUp",
         "paths": [
-          "/stripe/return",
-          "/stripe/refresh",
-          "/stripe/*"
+          "*"
         ]
       }
     ]
