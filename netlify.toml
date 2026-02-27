@@ -1,6 +1,4 @@
-# netlify.toml
-
-[build]
+[[build]]
   command = "npm run build"
   publish = ".next"
 
@@ -19,7 +17,6 @@
     Content-Type = "application/json"
     Access-Control-Allow-Origin = "*"
 
-# Redirect rules for clean URLs
 [[redirects]]
   from = "/stripe/return"
   to = "/stripe-return.html"
@@ -30,7 +27,6 @@
   to = "/stripe-refresh.html"
   status = 200
 
-# SPA fallback - must be last
 [[redirects]]
   from = "/*"
   to = "/index.html"
