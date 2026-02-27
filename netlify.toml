@@ -1,7 +1,7 @@
 # netlify.toml
 
 [[build]]
-  command = ". "$NVM_DIR/nvm.sh" && nvm use 20 && npm run build"
+  command = ". \"$NVM_DIR/nvm.sh\ && nvm use 20 && npm run build"
   publish = ".next"
 
  [[build.environment]]
