@@ -1,5 +1,12 @@
 # netlify.toml
 
+[[build]]
+  command = ". "$NVM_DIR/nvm.sh" && nvm use 20 && npm run build"
+  publish = ".next"
+
+ [[build.environment]]
+  NODE_VERSION = "20.9.0"
+
 [[headers]]
   for = "/.well-known/apple-app-site-association"
   [headers.values]
