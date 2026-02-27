@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "firstName": "Carlito",
+    "lastName":"Verrier",
+    "slug":"carlito",
+    "title": "Technical CEO",
+    "img":"/images/carlito.png",
+    "thumbnail":"/images/carlito-thumb.png",
+    "url":"/carlito",
+    "bio": "I’m a Software Engineer who believes the future of community lives at the intersection of shared interests and proximity. Growing up in New York, connection felt effortless because people constantly collided through culture, curiosity, and closeness. When I left, I realized most cities fail not from lack of interest, but from a lack of systems that bring the right people together at the right time and place. Through event planning and SaaS, I’ve seen how quickly strangers become communities when common interests are paired with physical presence. I’m building for a world where finding your people nearby feels natural, not accidental.",
+    "email":"carlito@email.com",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "2",
+    "firstName": "Udozo",
+    "lastName":"Okeke",
+    "slug":"udozo",
+    "title": "Product Owner",
+    "img":"/images/udozo.png",
+    "thumbnail":"/images/udozo-thumb.png",
+    "url":"/udozo",    
+    "bio": "I was born and raised in Atlanta and built my career across marketing, real estate management, operations, and administration—learning how to turn moving parts into momentum. After relocating to multiple cities, I felt how isolating it can be to start over without a clear way to find your people. That experience shaped how I think about community, systems, and scale. At BLU, I help build the foundation—organizing the business, supporting the vision, and making sure the details don’t slow the mission. This isn’t just a role for me; it’s a problem I’ve lived and a company I’m helping lead forward.",
+    "email":"udozo@email.com",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": ""
+    }
+  },
+  {
+    "id": "3",
+    "firstName": "ArNisha",
+    "lastName":"Henderson",
+    "slug":"arnisha",
+    "title": "Product Design Officer",
+    "img":"/images/arnisha.png",
+    "thumbnail":"/images/arnisha-thumb.png",
+    "url":"/arnisha",
+    "bio": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "email":"arnisha@email.com",
+    "socials": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "instagram": ""
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What is Bringing Link Ups (BLU)?",
+    "answer": "BLU is a platform for discovering, creating, and connecting around shared interests through real-world events powered by media and community engagement.",
+    "category":"general"
+  },
+  {
+    "question": "Who is BLU for?",
+    "answer": "BLU is built for people who want more than just event listings. It’s for community builders, event curators, and anyone looking to form real connections around nearby shared interests.",
+    "category":"general"
+  },
+  {
+    "question": "What makes BLU different from other event or social apps?",
+    "answer": "BLU focuses on real-world interaction, not endless feeds. With BLU Rooms, interactive maps, and interest-based discovery, you can connect before, during, and after events—not just RSVP and disappear.",
+    "category":"general"
+  },
+  {
+    "question": "What is a BLU Room?",
+    "answer": "A BLU Room is the hub for an event. It’s where organizers and attendees connect, share media, chat, promote to nearby users, and turn online engagement into real-world experiences.",
+    "category":"app"
+  },
+  {
+    "question": "Can I use BLU even if I don’t attend events often?",
+    "answer": "Yes. You can explore events, follow interests, and engage with communities online before deciding to attend anything in person.",
+    "category":"general"
+  },
+  {
+    "question": "How do I find events near me?",
+    "answer": "BLU uses your location and interests to recommend nearby events. You can browse and filter by interest, location, age group, or time.",
+    "category":"app"
+  },
+  {
+    "question": "Can I create and host my own events?",
+    "answer": "Yes. You can create public or private events, manage RSVPs, invite people, and host ticketed or free experiences directly through the app.",
+    "category":"app"
+  },
+  {
+    "question": "How do tickets and payments work?",
+    "answer": "Tickets are purchased securely through the BLU app using Stripe. Event organizers receive payouts directly through the platform.",
+    "category":"app"
+  },
+  {
+    "question": "Are refunds available for ticketed events?",
+    "answer": "No. All ticket sales are final.",
+    "category":"general"
+  },
+  {
+    "question": "Is BLU safe to use?",
+    "answer": "BLU prioritizes community safety through organizer transparency, user reporting, and event history. You can view ratings, reviews, and past Rooms before attending.",
+    "category":"safety"
+  },
+  {
+    "question": "Can I report inappropriate behavior?",
+    "answer": "Yes. Users and incidents can be reported directly in the app, and our team will review and take action when necessary.",
+    "category":"safety"
+  },
+  {
+    "question": "How is my information protected?",
+    "answer": "BLU uses encryption, secure servers, and privacy controls to protect your data. Your activity and profile visibility are always in your control.",
+    "category":"safety"
+  },
+  {
+    "question": "How much does BLU cost?",
+    "answer": "BLU is free to use.",
+    "category":"general"
+  },
+  {
+    "question": "How do I sign up?",
+    "answer": "Download the BLU app and request a signup code. An admin will review your request and reach out with next steps.",
+    "category":"app"
+  }
+]
