@@ -4,6 +4,9 @@
   command = "npm run build"
   publish = ".next"
 
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build.environment]
   NODE_VERSION = "20.9.0"
 
@@ -30,3 +33,8 @@
   to = "/stripe-refresh.html"
   status = 200
 
+# SPA fallback - must be last
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
