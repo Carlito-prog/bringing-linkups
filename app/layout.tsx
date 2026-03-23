@@ -24,10 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={`${interSans.variable} ${merriweather.variable} antialiased bg-[url('/images/asphalt.png')] bg-repeat text-white w-screen min-h-screen m-0 p-0`}>        
-        <div className="max-w-[1600px] mx-auto p-4">
+      <body className={`${interSans.variable} ${merriweather.variable} antialiased bg-[url('/images/asphalt.png')] bg-repeat text-white w-screen min-h-screen m-0 p-0`}>        
+        <div className="max-w-[1600px] mx-auto relative">
           <Navbar />
         </div>
         {children}

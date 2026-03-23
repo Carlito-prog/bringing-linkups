@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const Navbar = () => {
   return (
-    <section className="flex justify-between items-center">
+    <section className="flex justify-between items-center absolute w-full p-4">
       <div className="relative w-[50px] h-[50px] md:w-[60px] md:h-[60px] z-50">
         <Link href="/"><Image src="/images/blu-icon.svg" fill alt="logo" /></Link>
       </div>

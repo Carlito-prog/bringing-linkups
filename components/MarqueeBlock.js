@@ -4,8 +4,8 @@ import { Highlighter } from "@/components/ui/highlighter"
 
 export const MarqueeBlock = () => {
   return (
-    <Marquee gradient gradientColor="#111">
-      <div className="flex justify-center items-center gap-40 px-20 w-max h-[75px]">
+    <Marquee gradient gradientColor="#111" className="overflow-hidden">
+      <div className="flex justify-center items-center gap-40 p-4">
         <Image src={"/images/icons/business.svg"} width={50} height={50} alt="business"/>
         <p className="md:text-lg"><Highlighter action="underline" color="#E81EB7">Business</Highlighter></p>
         <Image src={"/images/icons/college_life.svg"} width={55} height={55} alt="college life"/>

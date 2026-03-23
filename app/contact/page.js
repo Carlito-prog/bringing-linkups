@@ -21,6 +21,7 @@ export default function Contact(){
         </div>
         <div className="self-center w-full md:w-1/2">
           <Formik initialValues={{ fullName:'', email: '', phone: '', message: '' }}
+            validateOnMount
             validate={values => { const errors = {};
               if (!values.email) {
                 errors.email = 'Email is required';
@@ -39,16 +40,33 @@ export default function Contact(){
 
               return errors;
             }}
-            onSubmit={ async (values) => {
-              await fetch("https://blu-landing.azurewebsites.net/api/HttpSendSendgridEmail?code=bDvKG0xdME-0IM91LjIm3ATjYHijEH0M1GjDBdEjxTisAzFucPbuSw%3D%3D",{
-                  "fullName":values.fullName,
-                  "email": values.email,
-                  "phone": values.phone,
-                  "message": values.message
-                })
-              .catch(err => {
-                console.log(err.message)
-              })
+            onSubmit={async (values, { setSubmitting, resetForm }) => {
+              setStatus(null);
+              try {
+                const res = await fetch('YOUR_AZURE_URL_HERE', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(values),
+                });
+
+                const data = await res.text();
+
+                if (!res.ok) {
+                  throw new Error(data || 'Something went wrong');
+                }
+
+                setStatus({ type: 'success', message: 'Message sent successfully!' });
+                resetForm();
+
+              } catch (err) {
+                console.error(err);
+                setStatus({
+                  type: 'error',
+                  message: 'Failed to send message. Please try again.'
+                });
+              } finally {
+                setSubmitting(false);
+              }
             }}
           >
             {({
@@ -57,10 +75,12 @@ export default function Contact(){
               touched,
               handleChange,
               handleBlur,
+              handleSubmit,
               isSubmitting,
-              isValidating
+              isValid,
+              dirty
             }) => (
-              <form className='flex flex-col gap-5 md:text-lg'>
+              <form onSubmit={handleSubmit} className='flex flex-col gap-5 md:text-lg'>
                 <input
                   type="text"
                   name="fullName"
@@ -103,7 +123,15 @@ export default function Contact(){
                   className='border-[1.5] rounded-xs border-white p-2'
                 ></textarea>
                 <span className='-mt-4 text-pink-600'>{errors.message && touched.message && errors.message}</span>
-                <button type="submit" disabled={isSubmitting} className={`cursor-pointer py-1 px-2 rounded-xs w-[25%] ${isValidating === true?"bg-[#dcff00]":"border-[1.5] rounded-xs border-white"}`}>
+                <button
+                  type="submit"
+                  disabled={!isValid || !dirty || isSubmitting}
+                  className={`cursor-pointer py-1 px-2 rounded-xs w-[25%] ${
+                    isValid && dirty
+                      ? "bg-[#dcff00] text-black hover:font-semibold"
+                      : "border-[1.5] rounded-xs border-white"
+                  }`}
+                >
                   Submit
                 </button>
               </form>

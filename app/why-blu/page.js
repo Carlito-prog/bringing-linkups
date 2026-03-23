@@ -4,7 +4,7 @@ import {ImageBlock} from '../../components/content/ImageBlock'
 
 export default function WhyBlu(){
   return(
-    <div>
+    <>
       <header className="hero bg-[url(/images/map-lines.svg)] bg-no-repeat bg-cover flex flex-col justify-center items-center gap-1 min-h-[500px] md:min-h-[650px] relative text-center">
         <h2 className="font-medium text-xl md:text-3xl tracking-[.1rem] md:tracking-[.2rem] uppercase">We Don't Do Ordinary</h2>
         <h1 className="font-bold font-serif pb-3 text-[6rem] md:text-[8rem] leading-[1] text-center">
@@ -29,6 +29,6 @@ export default function WhyBlu(){
           <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={true} subtitle="Real-Time Updates" title="Live Feed" content="Scroll photos, clips, and real moments from active rooms."/>} right={<ImageBlock url="/images/live-feed.png" title="live feed"/>}/>
         </section>
       </div>
-    </div>
+    </>
   )
 } 

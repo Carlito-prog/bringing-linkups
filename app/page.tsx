@@ -14,8 +14,8 @@ import { CalendarDaysIcon } from '@/components/ui/calendar-days'
 export default function Home() {
   return (
     <main className='h-full'>
-      <section className="before:content-[''] before:absolute before:h-[800px] before:w-full before:bg-[linear-gradient(to_top,rgba(17,17,17,.7)_0%,rgba(17,17,17,.25)_100%),url('/images/blu-icon-grid.svg')] before:-top-0 before:left-0 before:-z-1">
-        <div className="max-w-[1600px] mx-auto flex flex-col justify-center p-4">
+      <section className="before:content-[''] before:absolute before:h-[650px] before:w-full before:bg-[linear-gradient(to_top,rgba(17,17,17,.7)_0%,rgba(17,17,17,.25)_100%),url('/images/blu-icon-grid.svg')] before:-top-0 before:left-0 before:-z-1">
+        <div className="max-w-[1600px] mx-auto flex flex-col justify-center">
           <Hero/>
         </div>
       </section>

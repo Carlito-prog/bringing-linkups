@@ -8,12 +8,6 @@ export const FAQBlock = () => {
 	const [expanded,setExpanded]=useState(null)
   const [isActive, setIsActive] = useState("general")
 
-	// const faqCategories = faq.reduce((acc,item)=>{
-	// 	acc[item.category]=acc[item.category]||[]
-	// 	acc[item.category].push(item)
-	// 	return acc
-	// },{})
-
 	return (
 		<section className="flex flex-col gap-10 max-w-[1600px] mx-auto p-4 md:py-10">
 			<div className='text-center'>
