@@ -12,10 +12,10 @@ const jakarta = Plus_Jakarta_Sans({
 export const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-1 px-5 h-[500px] md:h-[650px] text-center">
-      <h2 className="font-medium text-xl md:text-3xl pb-2 tracking-[.1rem] md:tracking-[.2rem] uppercase">Bringing Link Ups</h2>
+      <h2 className="font-medium text-lg md:text-3xl pb-2 tracking-[.1rem] md:tracking-[.2rem] uppercase">Bringing Link Ups</h2>
       <hr className="bg-[#fff]/75 border-0 h-[1px] w-[15%]"/>
-      <h1 className="font-bold font-serif -mt-2 text-[5rem] md:text-[8rem] leading-[1]">
-        Your <span className="align-text-bottom inline-block text-[#2d72ff] text-center">
+      <h1 className="font-bold font-serif -mt-2 text-[3.25rem] md:text-[8rem] leading-[1]">
+        Your <span className="align-text-bottom inline-block text-[#2d72ff] ">
           <WordRotate words={["Interests", "City", "People"]} />
         </span>
       </h1>
