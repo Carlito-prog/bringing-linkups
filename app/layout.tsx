@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "BLU is a social event platform designed to use content to connect people through real-world experiences, nearby events, and shared interests.",
 
   icons: {
-    icon: "/images/blu-icon.svg",
+    icon: "/images/live-events.png",
   },
   openGraph: {
     title: "Bringing Link Ups (BLU)",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Bringing Link Ups",
     images: [
       {
-        url: "https://www.bringinglinkups.com/images/blu-icon.svg",
+        url: "https://www.bringinglinkups.com/images/live-feed.png",
         width: 1200,
         height: 630,
         alt: "Bringing Link Ups",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bringing Link Ups (BLU)",
     description:
-      "Find events and meaningful real-world connections nearby.",
-    images: ["https://www.bringinglinkups.com/images/blu-icon.svg"],
+      "Scroll through content to find events and meaningful real-world connections nearby.",
+    images: ["https://www.bringinglinkups.com/images/live-feed.png"],
   },
 };
 
