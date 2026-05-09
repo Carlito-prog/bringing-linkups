@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/competitors/page": "/competitors",
+  "/contact/page": "/contact",
+  "/founders/[slug]/page": "/founders/[slug]",
+  "/founders/page": "/founders",
+  "/icon.jpg/route": "/icon.jpg",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/terms-of-service/page": "/terms-of-service",
+  "/why-blu/page": "/why-blu"
+}

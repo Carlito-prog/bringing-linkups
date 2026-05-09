@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "H5AD8JW3RY.com.bringinglinkups.bringinglinkups",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}
