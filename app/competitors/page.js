@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { LiaMeetup } from "react-icons/lia";
-import { SiEventbrite } from "react-icons/si";
+import { CgEventbrite } from "react-icons/cg";
 import { DotPattern } from "@/components/ui/dot-pattern"
 
 export default function Competitors() {
@@ -28,7 +28,7 @@ export default function Competitors() {
               <th className="bg-[#2d72ff]"></th>
               <th className="bg-[#dcff00] m-0 text-black text-center text-xl align-top"><Image src="/images/blu-icon_blk.svg" width={30} height={30} alt="BLU icon" className="inline-block mr-2"/>Bringing Link Ups</th>
               <th className="bg-[#2d72ff] p-4 text-center text-xl"><LiaMeetup size={40} className="inline-block mr-2"/>Meetup</th>
-              <th className="bg-[#2d72ff] p-4 text-center text-xl"><SiEventbrite size={30} className="inline-block mr-2"/> Eventbrite</th>
+              <th className="bg-[#2d72ff] p-4 text-center text-xl"><CgEventbrite size={30} className="inline-block mr-2"/> Eventbrite</th>
             </tr>
           </thead>
           <tbody className="bg-black/60">
