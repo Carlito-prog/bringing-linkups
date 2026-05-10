@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { IoCheckmarkSharp } from "react-icons/io5";
-import { LiaMeetup } from "react-icons/lia";
-import { CgEventbrite } from "react-icons/cg";
+import { IoCheckmarkSharp } from "react-icons/io5"
+import { LiaMeetup } from "react-icons/lia"
+import { CgEventbrite } from "react-icons/cg"
 import { DotPattern } from "@/components/ui/dot-pattern"
 
 export default function Competitors() {
