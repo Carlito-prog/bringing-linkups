@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google"
-import "./globals.css";
+import "global.css";
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 
