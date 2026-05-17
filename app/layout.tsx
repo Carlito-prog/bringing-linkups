@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "BLU is a social event platform designed to use content to connect people through real-world experiences, nearby events, and shared interests.",
   icons: {
-    icon: "/images/icon.jpg",
+    icon: "/icon.jpg",
   },
   openGraph: {
     title: "Bringing Link Ups (BLU)",
