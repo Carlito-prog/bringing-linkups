@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Bringing Link Ups (BLU)",
     description:
       "Scroll through content to find events and meaningful real-world connections nearby.",
-    images: ["https://www.bringinglinkups.com/images/live-events.png"],
+    images: ["https://www.bringinglinkups.com/images/blu-splash.png"],
   },
 };
 
