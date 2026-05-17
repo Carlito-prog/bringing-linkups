@@ -33,6 +33,12 @@ export const metadata: Metadata = {
         height: 630,
         alt: "Bringing Link Ups",
       },
+      {
+        url: "https://www.bringinglinkups.com/images/blu-splash.png",
+        width: 1200,
+        height: 630,
+        alt: "Bringing Link Ups",
+      },
     ],
     type: "website",
   },
@@ -54,6 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta property="og:image" content="https://www.bringinglinkups.com/images/live-events.png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <body className={`${interSans.variable} ${merriweather.variable} antialiased bg-repeat bg-[url(/images/asphalt.png)] text-white w-screen min-h-screen m-0 p-0`}>
         <div className="max-w-[1600px] mx-auto relative">
           <Navbar />
