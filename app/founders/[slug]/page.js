@@ -5,8 +5,6 @@ import { GridPattern } from "@/components/ui/grid-pattern"
 import { LightRays } from "@/components/ui/light-rays"
 import { TypingAnimation } from "@/components/ui/typing-animation"
 import {AtSignIcon} from '@/components/ui/at-sign'
-import {InstagramIcon} from '@/components/ui/instagram'
-import {LinkedinIcon} from '@/components/ui/linkedin'
 
 export default async function FounderProfile({params}){
 
@@ -31,10 +29,24 @@ export default async function FounderProfile({params}){
           </h1>
           <p className="text-lg leading-8">{founder.bio}</p>
           <div className="socials flex items-center mt-10 gap-5">
-            <a href={founder.email} title="Email" target="blank"><AtSignIcon size={35} className="text-[#2d72ff] hover:text-[#dcff00]"/></a>
-            <a href="#" title="Instagram"><InstagramIcon size={35} className="text-[#2d72ff] hover:text-[#dcff00]"/></a>
-            <a href="#" title="LinkedIn"><LinkedinIcon size={35} className="text-[#2d72ff] hover:text-[#dcff00]"/></a>
+            <a 
+              href={`mailto:${founder.email}`} 
+              title="Email" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-serif group flex gap-2 items-center text-lg text-white hover:text-[#dcff00] transition-colors"
+            >
+              {/* Icon changes from blue to lime green on hover */}
+              <AtSignIcon 
+                size={35} 
+                className="text-[#2d72ff] group-hover:text-[#dcff00] transition-colors"
+              /> 
+              
+              {/* Text color is inherited from the <a> tag hover rule */}
+              <span>{founder.email}</span>
+            </a>
           </div>
+
         </div>
       </div>
     </section>

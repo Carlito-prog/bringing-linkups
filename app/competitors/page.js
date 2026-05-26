@@ -14,7 +14,7 @@ export default function Competitors() {
         <h1 className="font-bold font-serif pb-3 text-[6rem] md:text-[8rem] leading-[1] text-center">
           <span className="text-[#2d72ff] text-center">Us</span> vs Them
         </h1>
-        <p className="font-extralight text-lg md:text-2xl">The difference is intention. Blu is built to surface meaningful local experiences, <br/>while others prioritize quantity over connection.</p>
+        <p className="font-extralight text-lg md:text-2xl">The difference is we are mixing two worlds together. <br/>Blu is built to surface meaningful local experiences using content.</p>
       </div>
       <div className="mx-auto overflow-x-auto">
         <table className="table-fixed min-w-[720px] w-full">
