@@ -1,7 +1,7 @@
-'use client'
-import { FaApple} from "react-icons/fa6"
+"use client";
+import { FaApple } from "react-icons/fa6";
 // import { Plus_Jakarta_Sans } from "next/font/google"
-import { WordRotate } from "@/components/ui/word-rotate"
+import { WordRotate } from "@/components/ui/word-rotate";
 
 // const jakarta = Plus_Jakarta_Sans({
 //   subsets: ["latin"],
@@ -12,23 +12,33 @@ import { WordRotate } from "@/components/ui/word-rotate"
 export const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-1 px-5 h-[500px] md:h-[650px] text-center">
-      <h2 className="font-medium text-lg md:text-3xl pb-2 tracking-[.1rem] md:tracking-[.2rem] uppercase">Bringing Link Ups</h2>
-      <hr className="bg-[#fff]/75 border-0 h-[1px] w-[15%]"/>
+      <h2 className="font-medium text-lg md:text-3xl pb-2 tracking-[.1rem] md:tracking-[.2rem] uppercase">
+        Bringing Link Ups
+      </h2>
+      <hr className="bg-[#fff]/75 border-0 h-[1px] w-[15%]" />
       <h1 className="font-bold font-serif -mt-2 text-[3.25rem] md:text-[8rem] leading-[1]">
-        Your <span className="align-text-bottom inline-block text-[#2d72ff] ">
+        Your{" "}
+        <span className="align-text-bottom inline-block text-[#2d72ff] ">
           <WordRotate words={["Interests", "City", "People"]} />
         </span>
       </h1>
       <p className="font-light text-lg md:text-2xl ">
-        BLU is a social event platform that helps you discover people, media,<br className="hidden md:block"/>and events aligned to your interests and location — all in one place.
+        B.L.U. is a social event platform that helps you create & discover local
+        events while sharing content
+        <br className="hidden md:block" />
+        If TikTok and Eventbrite had a baby — It'd be B.L.U.
       </p>
 
       <div className="flex flex-col sm:flex-row mt-4 md:mt-8 gap-4 md:gap-6">
-        <a href="https://apps.apple.com/us/app/bringing-link-ups/id6754931092" target="_blank" className="border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 py-2 px-3 rounded-sm text-sm md:text-2xl hover:bg-[#2d72ff] hover:border-[#2d72ff] hover:text-white">
-          <FaApple size={45} className="fill-[#dcff00]"/>
+        <a
+          href="https://apps.apple.com/us/app/bringing-link-ups/id6754931092"
+          target="_blank"
+          className="border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 py-2 px-3 rounded-sm text-sm md:text-2xl hover:bg-[#2d72ff] hover:border-[#2d72ff] hover:text-white"
+        >
+          <FaApple size={45} className="fill-[#dcff00]" />
           <span className="flex flex-col items-start justify-center">
             <span className="text-lg/4">Download on the</span>
-            <span className="text-xl md:text-[1.75rem]">App Store</span> 
+            <span className="text-xl md:text-[1.75rem]">App Store</span>
           </span>
         </a>
 
@@ -41,5 +51,5 @@ export const Hero = () => {
         </button> */}
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,18 +1,22 @@
-"use client"
-import { motion, AnimatePresence } from "framer-motion"
-import { usePathname } from "next/navigation"
+"use client";
+import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Template({ children }) {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const directions = [
     { x: 800, y: 0 },
     { x: -800, y: 0 },
     { x: 0, y: 800 },
-    { x: 0, y: -800 }
-  ]
+    { x: 0, y: -800 },
+  ];
 
-  const random = directions[Math.floor(Math.random() * directions.length)]
+  // Deterministic per route so SSR and client markup match (Math.random() causes hydration errors).
+  const directionIndex =
+    pathname.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0) %
+    directions.length;
+  const random = directions[directionIndex];
 
   return (
     <AnimatePresence mode="wait">
@@ -22,33 +26,33 @@ export default function Template({ children }) {
             x: random.x,
             y: random.y,
             opacity: 0,
-            scale: 0.96
+            scale: 0.96,
           }}
           animate={{
             x: 0,
             y: 0,
             opacity: 1,
-            scale: 1
+            scale: 1,
           }}
           exit={{
             x: -random.x,
             y: -random.y,
             opacity: 0,
-            scale: 1.04
+            scale: 1.04,
           }}
           transition={{
             duration: 0.7,
-            ease: [0.22, 1, 0.36, 1]
+            ease: [0.22, 1, 0.36, 1],
           }}
           style={{
             minHeight: "100vh",
             width: "100%",
-            position: "relative"
+            position: "relative",
           }}
         >
           {children}
         </motion.div>
       </div>
     </AnimatePresence>
-  )
+  );
 }
