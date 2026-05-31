@@ -5,6 +5,10 @@
       {
         "appID": "H5AD8JW3RY.com.bringinglinkups.bringinglinkups",
         "paths": [
+          "/room/*",
+          "/success*",
+          "/cancel*",
+          "/stripe/*",
           "*"
         ]
       }
