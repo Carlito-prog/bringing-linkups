@@ -26,7 +26,7 @@ export const Hero = () => {
         B.L.U. is a social event platform that helps you create & discover local
         events while sharing content
         <br className="hidden md:block" />
-        If TikTok and Eventbrite had a baby — It'd be B.L.U.
+        <p> If TikTok and Eventbrite had a baby — It'd be B.L.U. </p>
       </p>
 
       <div className="flex flex-col sm:flex-row mt-4 md:mt-8 gap-4 md:gap-6">
