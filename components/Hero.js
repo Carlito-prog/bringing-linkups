@@ -30,25 +30,21 @@ export const Hero = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row mt-4 md:mt-8 gap-4 md:gap-6">
-        <a
-          href="https://apps.apple.com/us/app/bringing-link-ups/id6754931092"
-          target="_blank"
-          className="border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 py-2 px-3 rounded-sm text-sm md:text-2xl hover:bg-[#2d72ff] hover:border-[#2d72ff] hover:text-white"
-        >
-          <FaApple size={45} className="fill-[#dcff00]" />
+        <a href="https://apps.apple.com/us/app/bringing-link-ups/id6754931092" target="_blank" className="border border-white cursor-pointer flex items-center justify-center gap-2 py-2 px-3 rounded-md text-sm md:text-2xl hover:bg-[#2d72ff] hover:border-[#2d72ff] hover:text-white">
+          <FaApple size={45} className="fill-[#dcff00]"/>
           <span className="flex flex-col items-start justify-center">
-            <span className="text-lg/4">Download on the</span>
-            <span className="text-xl md:text-[1.75rem]">App Store</span>
+            <span className="text-lg/2 pt-3">Download on the</span>
+            <span className="text-xl md:text-[1.75rem]">App Store</span> 
           </span>
         </a>
 
-        {/* <button className={`${jakarta.variable} border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 font-medium rounded-sm text-sm md:text-lg w-[185px] h-[60px] hover:bg-[#2d72ff] hover:border-black hover:text-white`}>
+        {/* {/* <button className={`${jakarta.variable} border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 font-medium rounded-sm text-sm md:text-lg w-[185px] h-[60px] hover:bg-[#2d72ff] hover:border-black hover:text-white`}>
           <FaGooglePlay size={40} className="fill-[#dcff00]"/>
           <span className="flex flex-col items-start">
             <span className="md:text-base/4 uppercase">Get it on</span>
             <span className=" md:text-xl/7">Google Play</span> 
           </span>
-        </button> */}
+        </button> */} */}
       </div>
     </div>
   );

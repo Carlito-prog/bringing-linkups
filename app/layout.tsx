@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${interSans.variable} ${merriweather.variable} antialiased bg-repeat bg-[url(/images/asphalt.png)] text-white w-screen min-h-screen m-0 p-0`}>
-        <div className="max-w-[1600px] mx-auto relative">
+        <div className="fixed h-[60px] inset-0 mx-auto max-w-[1600px] z-2">
           <Navbar />
         </div>
         {children}
