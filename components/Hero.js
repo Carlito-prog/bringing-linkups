@@ -26,7 +26,6 @@ export const Hero = () => {
         B.L.U. is a social event platform that helps you create & discover local
         events while sharing content
         <br className="hidden md:block" />
-        <p> If TikTok and Eventbrite had a baby — It'd be B.L.U. </p>
       </p>
 
       <div className="flex flex-col sm:flex-row mt-4 md:mt-8 gap-4 md:gap-6">
@@ -34,7 +33,7 @@ export const Hero = () => {
           <FaApple size={45} className="fill-[#dcff00]"/>
           <span className="flex flex-col items-start justify-center">
             <span className="text-lg/2 pt-3">Download on the</span>
-            <span className="text-xl md:text-[1.75rem]">App Store</span> 
+            <span className="text-3xl md:text-3xl">App Store</span> 
           </span>
         </a>
 
