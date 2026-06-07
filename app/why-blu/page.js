@@ -14,22 +14,22 @@ export default function WhyBlu(){
       </header>
       <div>
          <section className="bg-[#2d72ff] bg-[url(/images/blu-text-pattern.svg)] bg-cover">
-          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={true} subtitle="Create Events in Seconds" title="Dedicated social space for your attendees." content="Whether you're a hobbyist, business owner, community organizer, or professional event curator, B.L.U. makes it easy to create and promote events locally for free."/>} right={<ImageBlock url="/images/live-events.png" title="live events"/>}/>
+          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={true} subtitle="Create Events in Seconds" title="Dedicated social space for your attendees." content="Whether you're a hobbyist, business owner, community organizer, or professional event curator, B.L.U. makes it easy to create and promote events locally for free."/>} right={<ImageBlock url="/images/create.png" title="create events"/>}/>
         </section>
 
-        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={true} subtitle="Live Events" title="Find What’s Happening" content="Discover trending rooms and experiences happening around you."/>} right={<ImageBlock url="/images/live-events.png" title="live events"/>}/>
+        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={false} subtitle="Live Events" title="Find What’s Happening" content="Discover trending rooms and experiences happening around you."/>} right={<ImageBlock url="/images/live-events.png" title="live events"/>}/>
 
         <section className="bg-[#2d72ff] bg-[url(/images/blu-text-pattern.svg)] bg-cover">
-          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={false} subtitle="Filter & Search" title="Search with Intention" content="Filter by date, location, or interest to find your people faster."/>} right={<ImageBlock url="/images/search-filter.png" title="search and filter"/>}/>
+          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={true} subtitle="Filter & Search" title="Search with Intention" content="Filter by date, location, or interest to find your people faster."/>} right={<ImageBlock url="/images/search-filter.png" title="search and filter"/>}/>
         </section>
 
-        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={true} subtitle="Mapped Events" title="Happening Near You" content="View events on the map and connect locally in real time."/>} right={<ImageBlock url="/images/near-you.png" title="happening near you"/>}/>
+        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={false} subtitle="Mapped Events" title="Happening Near You" content="View events on the map and connect locally in real time."/>} right={<ImageBlock url="/images/near-you.png" title="happening near you"/>}/>
 
          <section className="bg-[#2d72ff] bg-[url(/images/blu-text-pattern.svg)] bg-cover">
-          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={false} subtitle="Room Preview" title="Know Before You Join" content="Preview room details, vibe & activity before committing."/>} right={<ImageBlock url="/images/know-before.png" title="know before you join"/>}/>
+          <SplitSection reverse={false} mobile={true} left={<ContentBlock isBlue={true} subtitle="Room Preview" title="Know Before You Join" content="Preview room details, vibe & activity before committing."/>} right={<ImageBlock url="/images/know-before.png" title="know before you join"/>}/>
         </section>
 
-        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={true} subtitle="Real-Time Updates" title="Live Feed" content="Scroll photos, clips, and real moments from active rooms."/>} right={<ImageBlock url="/images/live-feed.png" title="live feed"/>}/>
+        <SplitSection reverse={true} mobile={true} left={<ContentBlock isBlue={false} subtitle="Real-Time Updates" title="Live Feed" content="Scroll photos, clips, and real moments from active rooms."/>} right={<ImageBlock url="/images/live-feed.png" title="live feed"/>}/>
       </div>
     </>
   )

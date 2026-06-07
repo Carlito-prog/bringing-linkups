@@ -15,17 +15,17 @@ export default async function FounderProfile({params}){
   if(!founder) return notFound()
 
   return(
-    <section className="max-w-[1600px] h-screen mx-auto px-4 overflow-y-hidden">
+    <section className="max-w-[1600px] h-screen mx-auto pt-[100px] px-4 overflow-y-hidden">
       <LightRays />
       <GridPattern className="opacity-8"/>
-      <div className="flex justify-between items-center gap-30 h-full">
-        <div className="founder-image w-full md:w-1/2 md:h-full relative before:content-[''] before:absolute before:inset-[-2%] before:bg-[url(/images/yellow-ring.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:pointer-events-none before:animate-spin before:[animation-duration:40s] before:z-0 before:overflow-hidden after:content-[''] after:absolute after:inset-[-3%] after:bg-[url(/images/blue-ring.svg)] after:bg-no-repeat after:bg-contain after:bg-center after:pointer-events-none after:animate-spin after:[animation-duration:25s] after:[animation-direction:reverse] after:z-0 after:overflow-hidden">
+      <div className="grid md:grid-cols-2 justify-between items-center gap-30 h-full">
+        <div className="founder-image hidden md:block md:h-full relative before:content-[''] before:absolute before:inset-[-2%] before:bg-[url(/images/yellow-ring.svg)] before:bg-no-repeat before:bg-contain before:bg-center before:pointer-events-none before:animate-spin before:[animation-duration:40s] before:z-0 before:overflow-hidden after:content-[''] after:absolute after:inset-[-3%] after:bg-[url(/images/blue-ring.svg)] after:bg-no-repeat after:bg-contain after:bg-center after:pointer-events-none after:animate-spin after:[animation-duration:25s] after:[animation-direction:reverse] after:z-0 after:overflow-hidden">
           <Image src={founder.img} fill sizes="100%" alt={founder.slug} className="object-contain relative z-1"/>
         </div>
-        <div className="founder-info w-full md:w-1/2">
+        <div className="founder-info">
           <h3 className="font-light text-2xl tracking-wider">{founder.title}</h3>
-          <h1 className="font-bold font-serif leading-[5.5rem] mt-4 mb-6 text-8xl">
-            {founder.firstName} <br/> <span className="text-[#2d72ff]"><TypingAnimation words={[`${founder.lastName}`]} cursorStyle="underscore" typeSpeed="350" /></span>
+          <h1 className="font-bold font-serif md:leading-[5.5rem] mt-4 mb-6 text-6xl md:text-8xl">
+            {founder.firstName} <br/> <TypingAnimation words={[`${founder.lastName}`]} cursorStyle="underscore" typeSpeed="350" className="text-[#2d72ff]"/>
           </h1>
           <p className="text-lg leading-8">{founder.bio}</p>
           <div className="socials flex items-center mt-10 gap-5">
