@@ -38,13 +38,13 @@ export const Hero = () => {
           </span>
         </a>
 
-        {/* {/* <button className={`${jakarta.variable} border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 font-medium rounded-sm text-sm md:text-lg w-[185px] h-[60px] hover:bg-[#2d72ff] hover:border-black hover:text-white`}>
+        {/* <button className={`${jakarta.variable} border-[.25px] border-white cursor-pointer flex items-center justify-center gap-2 font-medium rounded-sm text-sm md:text-lg w-[185px] h-[60px] hover:bg-[#2d72ff] hover:border-black hover:text-white`}>
           <FaGooglePlay size={40} className="fill-[#dcff00]"/>
           <span className="flex flex-col items-start">
             <span className="md:text-base/4 uppercase">Get it on</span>
             <span className=" md:text-xl/7">Google Play</span> 
           </span>
-        </button> */} */}
+        </button> */}
       </div>
     </div>
   );
