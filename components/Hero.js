@@ -24,8 +24,7 @@ export const Hero = () => {
       </h1>
       <p className="font-light text-lg md:text-2xl ">
         B.L.U. is a social event platform that helps you create & discover local
-        events while sharing content
-        <br className="hidden md:block" />
+        events while sharing content.
       </p>
 
       <div className="flex flex-col sm:flex-row mt-4 md:mt-8 gap-4 md:gap-6">
